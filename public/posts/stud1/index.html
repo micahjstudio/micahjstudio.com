@@ -21,8 +21,6 @@
 
 <style>
  
-
- 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
@@ -84,14 +82,32 @@ a:hover {
  
 #theme-toggle {
   cursor: pointer !important;
-  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  padding: 8px 4px !important;
+  min-height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  
+   
+  -webkit-tap-highlight-color: rgba(236, 66, 255, 0.3) !important;
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important;
-  -khtml-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
   user-select: none !important;
   touch-action: manipulation !important;
+  
+   
+  transition: all 0.2s ease !important;
+  border-radius: 4px !important;
+}
+
+#theme-toggle:hover {
+  background-color: rgba(236, 66, 255, 0.1) !important;
+}
+
+#theme-toggle:active {
+  background-color: rgba(236, 66, 255, 0.2) !important;
+  transform: scale(0.98) !important;
 }
 
  
@@ -111,6 +127,60 @@ body {
  
 *, *:before, *:after {
   touch-action: auto !important;
+}
+
+ 
+body[data-theme="dark"] {
+  --background-color: #181818 !important;
+  --text-color: #FFFFFF !important;
+  --gray-color: #464646 !important;
+  --code-color: #828282 !important;
+  background-color: #181818 !important;
+  color: #FFFFFF !important;
+}
+
+body[data-theme="light"] {
+  --background-color: #FFFFFF !important;
+  --text-color: #181818 !important;
+  --gray-color: #f2f2f2 !important;
+  --code-color: #828282 !important;
+  background-color: #FFFFFF !important;
+  color: #181818 !important;
+}
+
+ 
+body[data-theme="dark"] a {
+  color: #FFFFFF !important;
+}
+
+body[data-theme="dark"] a:hover {
+  color: #ec42ff !important;
+}
+
+body[data-theme="light"] a {
+  color: #181818 !important;
+}
+
+body[data-theme="light"] a:hover {
+  color: #ec42ff !important;
+}
+
+ 
+html body .portfolio .portfolio-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+  margin-top: 10px !important;
+}
+
+html body .portfolio .portfolio-grid .portfolio-item img {
+  width: 100% !important;
+  max-width: 300px !important;
+  height: 200px !important;
+  display: block !important;
+  object-fit: cover !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
 }
 
  
@@ -174,122 +244,24 @@ body {
     scroll-snap-type: none !important;
     scroll-behavior: auto !important;
   }
-}
-     
-
- 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
-
- 
-html, body, * {
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', sans-serif !important;
-}
-
-.main-header, .main-header *, .post-title, .post-title *, .breadcrumb, .index-title {
-  font-family: 'Fira Code', 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', monospace !important;
-}
-
- 
-html body .main-header nav,
-.main-header nav,
-header.main-header nav {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  justify-content: flex-start !important;
-  align-items: center !important;
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-html body .main-header nav li,
-.main-header nav li,
-header.main-header nav li {
-  display: inline-block !important;
-  margin-right: 14px !important;
-  margin-bottom: 0 !important;
-  margin-top: 0 !important;
-  float: none !important;
-  clear: none !important;
-  width: auto !important;
-  height: auto !important;
-}
-
- 
-a {
-  color: #181818 !important;
-  text-decoration: none !important;
-}
-
-a:hover {
-  color: #ec42ff !important;
-}
-
-.main-header nav li a {
-  color: #181818 !important;
-  font-family: 'Fira Code', monospace !important;
-}
-
-.main-header nav li a:hover {
-  color: #ec42ff !important;
-}
-
- 
-@media (max-width: 768px) {
-  .container, body {
-    width: 100% !important;
-    min-width: unset !important;
-    padding: 0 20px !important;
+  
+   
+  html body .portfolio .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
   }
   
-  .main-header {
-    width: 100% !important;
-    left: 0 !important;
-    transform: none !important;
-    padding: 12px 20px !important;
+  html body .portfolio .portfolio-grid .portfolio-item img {
+    max-width: 100% !important;
+    height: 150px !important;
   }
   
    
-  html body .main-header nav,
-  .main-header nav {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
+  #theme-toggle {
+    font-size: 0.9rem !important;
+    padding: 10px 6px !important;
+    margin-left: 5px !important;
   }
-  
-  html body .main-header nav li,
-  .main-header nav li {
-    margin-right: 15px !important;
-    display: inline-block !important;
-    width: auto !important;
-  }
-  
-   
-  html, body, * {
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
-  }
-  
-  .main-header, .post-title, .breadcrumb, .index-title {
-    font-family: 'Fira Code', 'SF Mono', Monaco, monospace !important;
-  }
-}
-html body .portfolio .portfolio-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 20px !important;
-  margin-top: 10px !important;
-}
-
-html body .portfolio .portfolio-grid .portfolio-item img {
-  width: 100% !important;
-  max-width: 300px !important;
-  height: 200px !important;
-  display: block !important;
-  object-fit: cover !important;
-  border-radius: 4px !important;
-  cursor: pointer !important;
 }
 
 @media (max-width: 600px) {
@@ -310,55 +282,84 @@ html body .portfolio .portfolio-grid .portfolio-item img {
     gap: 10px !important;
   }
 }
- 
-@media (max-width: 768px) {
-  .container, body {
-    width: 100% !important;
-    min-width: unset !important;
-    padding: 0 20px !important;
-  }
-  
-  .main-header {
-    width: 100% !important;
-    left: 0 !important;
-    transform: none !important;
-    padding: 12px 20px !important;
-  }
-}
-
-a, a:visited { color: var(--text-color) !important; }
-a:hover { color: var(--primary-color) !important; }
-.main-header nav li a { color: var(--text-color) !important; }
-.main-header nav li a:hover { color: var(--primary-color) !important; }
-.post-title a { color: var(--text-color) !important; }
-.post-title a:hover { color: var(--primary-color) !important; }
 </style>
-// Debug version for mobile - add this after the existing script
+
+<script>
 document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('theme-toggle');
   
-  if (themeToggle) {
-    // Add both click and touch events
-    themeToggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      console.log('Theme toggle clicked'); // Check browser console
-      toggleTheme();
-    });
-    
-    themeToggle.addEventListener('touchstart', function(e) {
-      e.preventDefault();
-      console.log('Theme toggle touched'); // Check browser console
-      toggleTheme();
-    });
+  if (!themeToggle) {
+    console.log('Theme toggle element not found');
+    return;
   }
   
-  function toggleTheme() {
-    const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  
+  let currentTheme = localStorage.getItem('theme') || 'light';
+  
+  
+  document.body.setAttribute('data-theme', currentTheme);
+  themeToggle.textContent = currentTheme === 'dark' ? '/tolight' : '/todark';
+  
+  
+  function toggleTheme(e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    
+    console.log('Toggle clicked, current theme:', currentTheme);
+    
+    
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    currentTheme = newTheme;
+    
+    
     document.body.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+    
+    
+    try {
+      localStorage.setItem('theme', newTheme);
+    } catch (e) {
+      try {
+        sessionStorage.setItem('theme', newTheme);
+      } catch (e2) {
+        console.log('Storage not available');
+      }
+    }
+    
     themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
+    
+    console.log('Theme switched to:', newTheme);
   }
+  
+  
+  themeToggle.addEventListener('click', toggleTheme, { passive: false });
+  
+  
+  themeToggle.addEventListener('touchend', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleTheme(e);
+  }, { passive: false });
+  
+  
+  themeToggle.addEventListener('touchstart', function(e) {
+    themeToggle.style.opacity = '0.7';
+  }, { passive: true });
+  
+  themeToggle.addEventListener('touchcancel', function(e) {
+    themeToggle.style.opacity = '1';
+  }, { passive: true });
+  
+  themeToggle.addEventListener('touchend', function(e) {
+    setTimeout(() => {
+      themeToggle.style.opacity = '1';
+    }, 150);
+  }, { passive: true });
+  
+  console.log('Theme toggle initialized, current theme:', currentTheme);
 });
+</script>
 </head>
 <body>
     <header class="main-header">
