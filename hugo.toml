@@ -33,6 +33,7 @@ weight = 30
   math = true
   copyright = ''
   mainImage = "/images/compositions.jpeg"
+    hero_image = "/images/compositions.jpeg"
   customCSS = ["css/custom.css"]
 
 [taxonomies]
