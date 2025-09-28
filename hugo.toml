@@ -32,8 +32,9 @@ weight = 30
   showGithubChart   = true
   math = true
   copyright = ''
-  mainImage = "images/compositions.jpeg"
-  hero_image = "images/compositions.jpeg"
+  # Use the theme's specific image parameters
+  mainImageUrl = "https://micahjstudio.com/images/compositions.jpeg"  # Full URL
+  showMainImage = true  # Make sure this is enabled
   customCSS = ["css/custom.css"]
 
 [taxonomies]

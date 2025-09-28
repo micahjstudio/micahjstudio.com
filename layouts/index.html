@@ -1,0 +1,64 @@
+{{ define "main" }}
+  <div class="breadcrumb">🏠 /home<hr></div>
+
+  <div class="main-image">
+    <img
+      src="{{ .Site.BaseURL }}images/compositions.jpeg"
+      alt="Main Image"
+      style="max-width: 600px"
+    />
+  </div>
+
+  <div class="portfolio">
+    <div class="index-title">---------------------------------------------------------------------------</div>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/ipad1.jpeg" alt="Portfolio Item 1" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/model5.jpeg" alt="Portfolio Item 2" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/model6.jpeg" alt="Portfolio Item 3" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/ipad3.jpeg" alt="Portfolio Item 4" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/3d1.png" alt="Portfolio Item 5" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/model7.jpeg" alt="Portfolio Item 6" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/ipad2.jpeg" alt="Portfolio Item 7" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/model2.jpeg" alt="Portfolio Item 8" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/3d2.png" alt="Portfolio Item 9" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/3d3.png" alt="Portfolio Item 10" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/ipad5.jpeg" alt="Portfolio Item 11" />
+      </div>
+      <div class="portfolio-item">
+        <img src="{{ .Site.BaseURL }}images/model1.jpeg" alt="Portfolio Item 12" />
+      </div>
+    </div>
+  </div>
+
+  <div class="posts-list">
+    {{ range .Site.RegularPages }}
+      <div class="post-title">
+        <a href="{{ .Permalink }}">- {{ .Title }}</a>
+        <small>{{ .Date.Format "2006.01.02" }}</small>
+      </div>
+    {{ end }}
+  </div>
+
+  <script src="{{ .Site.BaseURL }}js/portfolio.js"></script>
+{{ end }}
