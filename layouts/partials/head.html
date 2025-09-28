@@ -278,6 +278,34 @@ div.homepage-breadcrumb {
   margin-top: -25px !important; /* Alternative selector */
 }
 
+/* Fix page titles and content being hidden under header - target actual title class */
+.singleTitle {
+  margin-top: 80px !important;
+  padding-top: 20px !important;
+}
+
+html body .singleTitle {
+  margin-top: 80px !important;
+  padding-top: 20px !important;
+}
+
+/* Fix singleTitle colors specifically */
+body[data-theme="light"] .singleTitle {
+  color: #181818 !important; /* Force black text in light mode */
+}
+
+body[data-theme="dark"] .singleTitle {
+  color: #FFFFFF !important; /* Force white text in dark mode */
+}
+
+html body[data-theme="light"] .singleTitle {
+  color: #181818 !important; /* Higher specificity for light mode */
+}
+
+html body[data-theme="dark"] .singleTitle {
+  color: #FFFFFF !important; /* Higher specificity for dark mode */
+}
+
 /* Fix page titles and content being hidden under header - maximum specificity */
 html body h1,
 html body h2,
