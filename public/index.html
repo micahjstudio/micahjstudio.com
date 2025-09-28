@@ -21,6 +21,161 @@
   <link rel="stylesheet" href="https://micahjstudio.com/css/main.css">
 
 <style>
+ 
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+ 
+html, body, * {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', sans-serif !important;
+}
+
+.main-header, .main-header *, .post-title, .post-title *, .breadcrumb, .index-title {
+  font-family: 'Fira Code', 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', monospace !important;
+}
+
+ 
+html body .main-header nav,
+.main-header nav,
+header.main-header nav {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body .main-header nav li,
+.main-header nav li,
+header.main-header nav li {
+  display: inline-block !important;
+  margin-right: 14px !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  float: none !important;
+  clear: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+ 
+a {
+  color: #181818 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #ec42ff !important;
+}
+
+.main-header nav li a {
+  color: #181818 !important;
+  font-family: 'Fira Code', monospace !important;
+}
+
+.main-header nav li a:hover {
+  color: #ec42ff !important;
+}
+
+ 
+#theme-toggle {
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  touch-action: manipulation !important;
+}
+
+ 
+html {
+  scroll-behavior: smooth !important;
+  touch-action: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+body {
+  touch-action: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+ 
+*, *:before, *:after {
+  touch-action: auto !important;
+}
+
+ 
+@media (max-width: 768px) {
+  .container, body {
+    width: 100% !important;
+    min-width: unset !important;
+    padding: 0 20px !important;
+  }
+  
+  .main-header {
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    padding: 12px 20px !important;
+  }
+  
+   
+  html body .main-header nav,
+  .main-header nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+  }
+  
+  html body .main-header nav li,
+  .main-header nav li {
+    margin-right: 15px !important;
+    display: inline-block !important;
+    width: auto !important;
+  }
+  
+   
+  html, body, * {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
+  }
+  
+  .main-header, .post-title, .breadcrumb, .index-title {
+    font-family: 'Fira Code', 'SF Mono', Monaco, monospace !important;
+  }
+  
+   
+  .main-header nav li a,
+  #theme-toggle {
+    padding: 8px 4px !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    touch-action: manipulation !important;
+  }
+  
+   
+  html, body {
+    touch-action: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    overflow-x: hidden !important;
+  }
+  
+   
+  * {
+    scroll-snap-type: none !important;
+    scroll-behavior: auto !important;
+  }
+}
      
 
  
@@ -179,7 +334,32 @@ a:hover { color: var(--primary-color) !important; }
 .post-title a { color: var(--text-color) !important; }
 .post-title a:hover { color: var(--primary-color) !important; }
 </style>
-
+// Debug version for mobile - add this after the existing script
+document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('theme-toggle');
+  
+  if (themeToggle) {
+    // Add both click and touch events
+    themeToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('Theme toggle clicked'); // Check browser console
+      toggleTheme();
+    });
+    
+    themeToggle.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      console.log('Theme toggle touched'); // Check browser console
+      toggleTheme();
+    });
+  }
+  
+  function toggleTheme() {
+    const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
+  }
+});
 </head>
 <body>
     <header class="main-header">
