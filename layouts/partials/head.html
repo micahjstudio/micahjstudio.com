@@ -6,14 +6,14 @@
   <link rel="stylesheet" href="{{ $theme.RelPermalink }}">
 {{ end }}
 <style>
-body .portfolio .portfolio-grid {
+html body .portfolio .portfolio-grid {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
   gap: 20px !important;
   margin-top: 10px !important;
 }
 
-body .portfolio .portfolio-grid .portfolio-item img {
+html body .portfolio .portfolio-grid .portfolio-item img {
   width: 100% !important;
   max-width: 300px !important;
   height: 200px !important;
@@ -24,19 +24,19 @@ body .portfolio .portfolio-grid .portfolio-item img {
 }
 
 @media (max-width: 600px) {
-  body .portfolio .portfolio-grid {
+  html body .portfolio .portfolio-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
   }
   
-  body .portfolio .portfolio-grid .portfolio-item img {
+  html body .portfolio .portfolio-grid .portfolio-item img {
     max-width: 100% !important;
     height: 150px !important;
   }
 }
 
 @media (max-width: 375px) {
-  body .portfolio .portfolio-grid {
+  html body .portfolio .portfolio-grid {
     grid-template-columns: 1fr !important;
     gap: 10px !important;
   }

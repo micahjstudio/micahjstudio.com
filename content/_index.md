@@ -1,5 +1,6 @@
 ---
 title: "micahjstudio"
+featured_image: "images/compositions.jpg"
 ---
 
 <div class="main-image">
