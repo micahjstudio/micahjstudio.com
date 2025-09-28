@@ -125,11 +125,27 @@ body[data-theme="dark"] a:hover {
   color: #ec42ff !important;
 }
 
+body[data-theme="dark"] .main-header nav li a {
+  color: #FFFFFF !important;
+}
+
+body[data-theme="dark"] .main-header nav li a:hover {
+  color: #ec42ff !important;
+}
+
 body[data-theme="light"] a {
   color: #181818 !important;
 }
 
 body[data-theme="light"] a:hover {
+  color: #ec42ff !important;
+}
+
+body[data-theme="light"] .main-header nav li a {
+  color: #181818 !important;
+}
+
+body[data-theme="light"] .main-header nav li a:hover {
   color: #ec42ff !important;
 }
 
@@ -173,8 +189,8 @@ html body .portfolio .portfolio-grid .portfolio-item img {
   
   /* Ensure breadcrumb doesn't get covered */
   .breadcrumb {
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
   }
   
   /* Double-force horizontal navigation on mobile for all pages */
@@ -229,6 +245,12 @@ html body .portfolio .portfolio-grid .portfolio-item img {
     padding: 10px 6px !important;
     margin-left: 5px !important;
   }
+}
+
+/* Desktop fixes - breadcrumb spacing for all screen sizes */
+.breadcrumb {
+  margin-top: 60px !important; /* Account for fixed header on all devices */
+  margin-bottom: 15px !important;
 }
 
 @media (max-width: 600px) {
