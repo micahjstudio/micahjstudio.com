@@ -27,12 +27,13 @@ weight = 30
     path = "github.com/elecbrandy/freshpink"
 
 [params]
-  primaryColor      = "#ec42ff"     # Primary theme color (hex code)
-  githubUsername    = "elecbrandy"    # GitHub username for contribution chart
-  showGithubChart   = true            # Set to true to display the GitHub contributions chart
+  primaryColor      = "#ec42ff"
+  githubUsername    = "elecbrandy"
+  showGithubChart   = true
   math = true
   copyright = ''
   mainImage = "/images/compositions.jpeg"
+  customCSS = ["/css/custom.css"]
 
 [taxonomies]
   tag = 'tags'
