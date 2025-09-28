@@ -1,7 +1,8 @@
-baseURL = 'micahjstudio.github.io' # your git repository address
-title = 'micahjstudio' # your own blog title
+baseURL = 'https://micahjstudio.com'
+title = 'micahjstudio'
 languageCode = 'en-us'
-canonifyURLs = true
+canonifyURLs = false
+relativeURLs = false
 
 [[menus.main]]
 name = 'Home'
