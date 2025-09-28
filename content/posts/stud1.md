@@ -81,9 +81,9 @@ tags = ['studio']
   <div class="pdf-mobile-notice">
     <p><strong>On mobile?</strong> <a href="/pdfs/graph1.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
   </div>
-  <object data="/pdfs/stud1.pdf" type="application/pdf" width="100%" height="600px">
+  <object data="/pdfs/graph1.pdf" type="application/pdf" width="100%" height="600px">
     <div class="pdf-fallback">
-      <p>PDF cannot be displayed. <a href="/pdfs/stud1.pdf" target="_blank">Download PDF</a> or <a href="/pdfs/stud1.pdf" target="_blank">view in new tab</a>.</p>
+      <p>PDF cannot be displayed. <a href="/pdfs/graph1.pdf" target="_blank">Download PDF</a> or <a href="/pdfs/graph1.pdf" target="_blank">view in new tab</a>.</p>
     </div>
   </object>
 </div>
