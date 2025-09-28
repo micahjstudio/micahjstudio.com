@@ -61,4 +61,152 @@
   </div>
 
   <script src="{{ .Site.BaseURL }}js/portfolio.js"></script>
+
+  <style>
+  /* CRITICAL MOBILE FIXES - inline to ensure they load */
+  
+  /* Force font loading first */
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+  
+  /* Apply fonts with highest specificity */
+  html, body, * {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif !important;
+  }
+  
+  .main-header, .main-header *, .post-title, .post-title *, .breadcrumb, .index-title {
+    font-family: 'Fira Code', 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', 'Source Code Pro', monospace !important;
+  }
+  
+  /* FORCE navigation to be horizontal with maximum specificity */
+  html body .main-header nav,
+  .main-header nav,
+  header.main-header nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  html body .main-header nav li,
+  .main-header nav li,
+  header.main-header nav li {
+    display: inline-block !important;
+    margin-right: 14px !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  
+  /* Fix all link colors */
+  a {
+    color: #181818 !important; /* Force black text */
+    text-decoration: none !important;
+  }
+  
+  a:hover {
+    color: #ec42ff !important; /* Pink on hover */
+  }
+  
+  .main-header nav li a {
+    color: #181818 !important;
+    font-family: 'Fira Code', monospace !important;
+  }
+  
+  .main-header nav li a:hover {
+    color: #ec42ff !important;
+  }
+  
+  .post-title a {
+    color: #181818 !important;
+    font-family: 'Fira Code', monospace !important;
+  }
+  
+  .post-title a:hover {
+    color: #ec42ff !important;
+  }
+  
+  /* Mobile container fixes */
+  @media (max-width: 768px) {
+    .container, body {
+      width: 100% !important;
+      min-width: unset !important;
+      padding: 0 20px !important;
+    }
+    
+    .main-header {
+      width: 100% !important;
+      left: 0 !important;
+      transform: none !important;
+      padding: 12px 20px !important;
+    }
+    
+    /* Double-force horizontal navigation on mobile */
+    html body .main-header nav,
+    .main-header nav {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+    }
+    
+    html body .main-header nav li,
+    .main-header nav li {
+      margin-right: 15px !important;
+      display: inline-block !important;
+      width: auto !important;
+    }
+    
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 12px !important;
+    }
+    
+    .portfolio-item img {
+      height: 150px !important;
+    }
+    
+    /* Ensure fonts load on mobile */
+    html, body, * {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
+    }
+    
+    .main-header, .post-title, .breadcrumb, .index-title {
+      font-family: 'Fira Code', 'SF Mono', Monaco, monospace !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr !important;
+    }
+    
+    .index-title {
+      font-size: 0.7rem !important;
+      word-break: break-all !important;
+    }
+  }
+  
+  /* PDF mobile fix */
+  @media (max-width: 768px) {
+    object[type="application/pdf"] {
+      width: 100% !important;
+      height: 400px !important;
+      min-height: 400px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    object[type="application/pdf"] {
+      height: 300px !important;
+      min-height: 300px !important;
+    }
+  }
+  </style>
 {{ end }}
