@@ -11,11 +11,11 @@ tags = ['studio']
 <!-- Replace your PDF object tags with this mobile-friendly version -->
 <div class="pdf-container">
   <div class="pdf-mobile-notice">
-    <p><strong>On mobile?</strong> <a href="/pdfs/stud1.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
+    <p><strong>On mobile?</strong> <a href="/pdfs/des1.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
   </div>
-  <object data="/pdfs/stud1.pdf" type="application/pdf" width="100%" height="600px">
+  <object data="/pdfs/des1.pdf" type="application/pdf" width="100%" height="600px">
     <div class="pdf-fallback">
-      <p>PDF cannot be displayed. <a href="/pdfs/stud1.pdf" target="_blank">Download PDF</a> or <a href="/pdfs/stud1.pdf" target="_blank">view in new tab</a>.</p>
+      <p>PDF cannot be displayed. <a href="/pdfs/des1.pdf" target="_blank">Download PDF</a> or <a href="/pdfs/des1.pdf" target="_blank">view in new tab</a>.</p>
     </div>
   </object>
 </div>
@@ -79,7 +79,7 @@ tags = ['studio']
 <!-- Replace your PDF object tags with this mobile-friendly version -->
 <div class="pdf-container">
   <div class="pdf-mobile-notice">
-    <p><strong>On mobile?</strong> <a href="/pdfs/stud1.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
+    <p><strong>On mobile?</strong> <a href="/pdfs/graph1.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
   </div>
   <object data="/pdfs/stud1.pdf" type="application/pdf" width="100%" height="600px">
     <div class="pdf-fallback">
