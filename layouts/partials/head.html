@@ -75,12 +75,11 @@ a:hover {
   align-items: center !important;
   justify-content: center !important;
   
-  /* Touch improvements */
+  /* Touch improvements - remove touch-action */
   -webkit-tap-highlight-color: rgba(236, 66, 255, 0.3) !important;
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important;
   user-select: none !important;
-  touch-action: manipulation !important;
   
   /* Visual feedback */
   transition: all 0.2s ease !important;
@@ -96,15 +95,7 @@ a:hover {
   transform: scale(0.98) !important;
 }
 
-/* Fix scroll behavior - minimal restrictions */
-html {
-  -webkit-overflow-scrolling: touch !important;
-}
-
-body {
-  -webkit-overflow-scrolling: touch !important;
-  overflow-x: hidden !important;
-}
+/* No scroll restrictions at all */
 
 /* Dark theme colors - make sure they're defined */
 body[data-theme="dark"] {
@@ -199,21 +190,16 @@ html body .portfolio .portfolio-grid .portfolio-item img {
     font-family: 'Fira Code', 'SF Mono', Monaco, monospace !important;
   }
   
-  /* Better mobile touch targets */
+  /* Better mobile touch targets - no touch-action restrictions */
   .main-header nav li a,
   #theme-toggle {
     padding: 8px 4px !important;
     min-height: 44px !important;
     display: flex !important;
     align-items: center !important;
-    touch-action: manipulation !important;
   }
   
-  /* Fix mobile scrolling - keep it simple */
-  html, body {
-    -webkit-overflow-scrolling: touch !important;
-    overflow-x: hidden !important;
-  }
+  /* No mobile scroll restrictions */
   
   /* Mobile portfolio grid */
   html body .portfolio .portfolio-grid {
