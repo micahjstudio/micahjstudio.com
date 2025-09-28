@@ -269,9 +269,13 @@ body {
   margin-top: 10px !important;
 }
 
-/* Homepage gets less spacing on desktop */
-.homepage-breadcrumb {
-  margin-top: -20px !important; /* Pull even closer to header on desktop */
+/* Homepage gets less spacing on desktop - higher specificity */
+html body .homepage-breadcrumb {
+  margin-top: -25px !important; /* Even more negative margin with higher specificity */
+}
+
+div.homepage-breadcrumb {
+  margin-top: -25px !important; /* Alternative selector */
 }
 
 /* Mobile breadcrumb - keep original spacing */
