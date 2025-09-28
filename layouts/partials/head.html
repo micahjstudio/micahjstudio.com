@@ -253,6 +253,20 @@ html body .portfolio .portfolio-grid .portfolio-item img {
   margin-bottom: 15px !important;
 }
 
+/* Fix PDF positioning - add top margin to all content areas */
+.container, main, article, .content {
+  margin-top: 60px !important;
+}
+
+/* Specific fix for PDF embeds */
+object[type="application/pdf"] {
+  margin-top: 20px !important;
+}
+
+.pdf-container {
+  margin-top: 20px !important;
+}
+
 @media (max-width: 600px) {
   html body .portfolio .portfolio-grid {
     grid-template-columns: repeat(2, 1fr) !important;
