@@ -1,0 +1,70 @@
+{{/* Homepage override: uses site param mainImage with a sensible fallback */}}
+{{ define "main" }}
+
+  <div class="breadcrumb">🏠 /home<hr></div>
+
+  <div class="main-image">
+    <img
+      src="{{ .Site.Params.mainImage | default "/qr1.png" }}"
+      alt="{{ .Site.Params.mainImageAlt | default "Main Image" }}"
+      style="max-width: 600px"
+    />
+  </div>
+
+  <div class="portfolio">
+    <div class="index-title">---------------------------------------------------------------------------</div>
+    <div class="portfolio-grid">
+      <!-- Add your portfolio items here -->
+      <div class="portfolio-item">
+        <img src="/images/ipad1.jpeg" alt="Portfolio Item 1" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/model5.jpeg" alt="Portfolio Item 2" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/model6.jpeg" alt="Portfolio Item 3" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/ipad3.jpeg" alt="Portfolio Item 4" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/3d1.png" alt="Portfolio Item 5" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/model7.jpeg" alt="Portfolio Item 6" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/ipad2.jpeg" alt="Portfolio Item 7" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/model2.jpeg" alt="Portfolio Item 8" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/3d2.png" alt="Portfolio Item 9" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/3d3.png" alt="Portfolio Item 10" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/ipad5.jpeg" alt="Portfolio Item 11" />
+      </div>
+      <div class="portfolio-item">
+        <img src="/images/model1.jpeg" alt="Portfolio Item 12" />
+      </div>
+    </div>
+  </div>
+
+  <div class="posts-list">
+    {{ $pages := where .Site.RegularPages "Section" "posts" }}
+    {{ $pages = $pages.ByWeight.ByDate.Reverse }}
+    {{ range $index, $p := first 10 $pages }}
+      <div class="post-title">
+        <a href="{{ $p.RelPermalink }}">- {{ $p.Title }}</a>
+        <small>{{ $p.Date.Format "2006.01.02" }}</small>
+      </div>
+    {{ end }}
+  </div>
+
+  <script src="/js/portfolio.js"></script>
+
+{{ end }}

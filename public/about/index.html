@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '$', right: '$', display: false}
+            ]
+        });"></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>About | micahjstudio</title>
+
+    <link rel="stylesheet" href="//localhost:1313/css/main.css">
+    <link rel="stylesheet" href="//localhost:1313/css/min600.css">
+<style>
+  :root {
+    --primary-color: #ec42ff;
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-000000000"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-000000000');
+</script>
+
+
+</head>
+<body>
+    <header class="main-header">
+	<nav>
+	  <li><a href="//localhost:1313/">/home</a></li>
+	  <li><a href="//localhost:1313/tags/">/tags</a></li>
+	  <li><a href="//localhost:1313/about/">/about</a></li>
+	  <li id="theme-toggle" style="cursor: pointer;">/todark</li>
+	</nav>
+  </header>
+
+  <script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  const themeToggle = document.getElementById('theme-toggle');
+	  
+	  
+	  let currentTheme = localStorage.getItem('theme') || 'light';
+  
+	  
+	  document.body.setAttribute('data-theme', currentTheme);
+	  themeToggle.textContent = currentTheme === 'dark' ? '/tolight' : '/todark';
+  
+	  
+	  function toggleTheme() {
+		
+		const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  
+		
+		document.body.setAttribute('data-theme', newTheme);
+  
+		
+		localStorage.setItem('theme', newTheme);
+  
+		
+		themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
+	  }
+  
+	  
+	  themeToggle.addEventListener('click', toggleTheme);
+	});
+  </script>
+
+    
+  <aside class="toc">
+    <nav id="TableOfContents"></nav>
+  </aside>
+  <div class="featured-container">
+    
+    <div class="overlay-text">
+      <small>2025.09.27</small>
+      <div class="singleTitle">About</div>
+    </div>
+  </div>
+  <hr>
+<p>My name is Micah, I&rsquo;m an artist, a photographer, a writer, and a student. I&rsquo;m currently studying architecture at Del Mar College.</p>
+<p><img src="//localhost:1313/images/me.png" alt="me"></p>
+<p>I suppose I&rsquo;m also a kind of ameteur coder, I&rsquo;ve build a couple of basic websites like this one.</p>
+<p>I built this website as a means of presenting myself to potential employers, at the moment I&rsquo;m seeking a drafting job, in the future It will be for jobs as a lisenced architect.</p>
+<p>you can find my photography as well at <a href="https://micah-james.com/">micahjames.com</a>.</p>
+<p>my email address is <a href="mailto:micah@micahjstudio.com">micah@micahjstudio.com</a></p>
+<p>and my instagram is <a href="https://www.instagram.com/mi.cah.j/">@mi.cah.j</a></p>
+
+
+    
+
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 40,
+  backgroundColor: '#ec42ff',
+  textColor: '#fff'
+})</script>
+
+</body>
+</html>

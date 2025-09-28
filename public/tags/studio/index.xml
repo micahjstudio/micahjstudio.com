@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studio on micahjstudio</title>
+    <link>//localhost:1313/tags/studio/</link>
+    <description>Recent content in Studio on micahjstudio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Sep 2025 13:49:17 -0455</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/studio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>design/graphics 1 portfolio</title>
+      <link>//localhost:1313/posts/stud1/</link>
+      <pubDate>Sat, 27 Sep 2025 13:49:17 -0455</pubDate>
+      <guid>//localhost:1313/posts/stud1/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;object data=&#34;/pdfs/des1.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;//localhost:1313/pdfs/des1.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;&#xA;&lt;object data=&#34;/pdfs/graph1.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;//localhost:1313/pdfs/graph1.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;</description>
+    </item>
+    <item>
+      <title>design/graphics 2 portfolio</title>
+      <link>//localhost:1313/posts/stud2/</link>
+      <pubDate>Sat, 27 Sep 2025 13:49:17 -0455</pubDate>
+      <guid>//localhost:1313/posts/stud2/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;object data=&#34;/pdfs/stud2.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;//localhost:1313/pdfs/stud2.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;</description>
+    </item>
+  </channel>
+</rss>
