@@ -247,23 +247,36 @@ html body .portfolio .portfolio-grid .portfolio-item img {
   }
 }
 
-/* Desktop fixes - breadcrumb spacing for all screen sizes */
-.breadcrumb {
-  margin-top: 60px !important; /* Account for fixed header on all devices */
+/* Desktop fixes - more aggressive breadcrumb spacing */
+html body .breadcrumb {
+  margin-top: 60px !important;
   margin-bottom: 15px !important;
 }
 
-/* Fix PDF positioning - add top margin to all content areas */
-.container, main, article, .content {
-  margin-top: 60px !important;
-}
-
-/* Specific fix for PDF embeds */
-object[type="application/pdf"] {
+/* Homepage breadcrumb specific override */
+html body .homepage-breadcrumb {
   margin-top: 20px !important;
 }
 
-.pdf-container {
+/* Fix PDF positioning - more aggressive selectors */
+html body .container,
+html body main,
+html body article,
+html body .content {
+  padding-top: 60px !important;
+}
+
+/* Override theme's body padding */
+html body {
+  padding-top: 0 !important;
+}
+
+/* Specific fix for PDF embeds */
+html body object[type="application/pdf"] {
+  margin-top: 20px !important;
+}
+
+html body .pdf-container {
   margin-top: 20px !important;
 }
 
@@ -284,6 +297,38 @@ object[type="application/pdf"] {
     grid-template-columns: 1fr !important;
     gap: 10px !important;
   }
+}
+/* Desktop fixes - more aggressive breadcrumb spacing */
+html body .breadcrumb {
+  margin-top: 60px !important;
+  margin-bottom: 15px !important;
+}
+
+/* Homepage breadcrumb specific override */
+html body .homepage-breadcrumb {
+  margin-top: 20px !important;
+}
+
+/* Fix PDF positioning - more aggressive selectors */
+html body .container,
+html body main,
+html body article,
+html body .content {
+  padding-top: 60px !important;
+}
+
+/* Override theme's body padding */
+html body {
+  padding-top: 0 !important;
+}
+
+/* Specific fix for PDF embeds */
+html body object[type="application/pdf"] {
+  margin-top: 20px !important;
+}
+
+html body .pdf-container {
+  margin-top: 20px !important;
 }
 </style>
 
