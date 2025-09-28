@@ -266,7 +266,7 @@ body {
 
 /* Desktop breadcrumb adjustments */
 .breadcrumb {
-  margin-top: -10px !important; /* Bring regular breadcrumbs up to match homepage level */
+  margin-top: -25px !important; /* Bring regular breadcrumbs up to match homepage level */
 }
 
 /* Homepage gets less spacing on desktop - higher specificity */
@@ -280,12 +280,32 @@ div.homepage-breadcrumb {
 
 /* Fix page titles and content being hidden under header */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 20px !important;
+  margin-top: 40px !important; /* Increased spacing to clear header */
+  padding-top: 20px !important; /* Extra padding for safety */
+}
+
+/* Force proper heading colors in both themes */
+body[data-theme="light"] h1,
+body[data-theme="light"] h2, 
+body[data-theme="light"] h3,
+body[data-theme="light"] h4,
+body[data-theme="light"] h5,
+body[data-theme="light"] h6 {
+  color: #181818 !important; /* Force black text in light mode */
+}
+
+body[data-theme="dark"] h1,
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3,
+body[data-theme="dark"] h4,
+body[data-theme="dark"] h5,
+body[data-theme="dark"] h6 {
+  color: #FFFFFF !important; /* Force white text in dark mode */
 }
 
 /* Main content areas need spacing too */
 main, article, .content {
-  padding-top: 10px !important;
+  padding-top: 20px !important; /* Increased padding */
 }
 
 /* Mobile breadcrumb - keep original spacing */
