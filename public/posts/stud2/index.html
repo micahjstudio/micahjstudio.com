@@ -280,7 +280,7 @@ body {
 
  
 .breadcrumb {
-  margin-top: -25px !important;  
+  margin-top: -10px !important;  
 }
 
  
@@ -293,33 +293,47 @@ div.homepage-breadcrumb {
 }
 
  
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 40px !important;  
-  padding-top: 20px !important;  
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+  margin-top: 80px !important;  
+  padding-top: 20px !important;
 }
 
  
-body[data-theme="light"] h1,
-body[data-theme="light"] h2, 
-body[data-theme="light"] h3,
-body[data-theme="light"] h4,
-body[data-theme="light"] h5,
-body[data-theme="light"] h6 {
+html body[data-theme="light"] h1,
+html body[data-theme="light"] h2, 
+html body[data-theme="light"] h3,
+html body[data-theme="light"] h4,
+html body[data-theme="light"] h5,
+html body[data-theme="light"] h6 {
   color: #181818 !important;  
 }
 
-body[data-theme="dark"] h1,
-body[data-theme="dark"] h2,
-body[data-theme="dark"] h3,
-body[data-theme="dark"] h4,
-body[data-theme="dark"] h5,
-body[data-theme="dark"] h6 {
+html body[data-theme="dark"] h1,
+html body[data-theme="dark"] h2,
+html body[data-theme="dark"] h3,
+html body[data-theme="dark"] h4,
+html body[data-theme="dark"] h5,
+html body[data-theme="dark"] h6 {
   color: #FFFFFF !important;  
 }
 
  
-main, article, .content {
-  padding-top: 20px !important;  
+html body main h1:first-child,
+html body article h1:first-child {
+  margin-top: 80px !important;
+  color: var(--text-color) !important;
+}
+
+ 
+html body main,
+html body article,
+html body .content {
+  padding-top: 40px !important;  
 }
 
  

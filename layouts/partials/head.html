@@ -266,7 +266,7 @@ body {
 
 /* Desktop breadcrumb adjustments */
 .breadcrumb {
-  margin-top: -25px !important; /* Bring regular breadcrumbs up to match homepage level */
+  margin-top: -10px !important; /* Bring regular breadcrumbs up to match homepage level */
 }
 
 /* Homepage gets less spacing on desktop - higher specificity */
@@ -278,34 +278,48 @@ div.homepage-breadcrumb {
   margin-top: -25px !important; /* Alternative selector */
 }
 
-/* Fix page titles and content being hidden under header */
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 40px !important; /* Increased spacing to clear header */
-  padding-top: 20px !important; /* Extra padding for safety */
+/* Fix page titles and content being hidden under header - maximum specificity */
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+  margin-top: 80px !important; /* Much larger margin to clear header */
+  padding-top: 20px !important;
 }
 
-/* Force proper heading colors in both themes */
-body[data-theme="light"] h1,
-body[data-theme="light"] h2, 
-body[data-theme="light"] h3,
-body[data-theme="light"] h4,
-body[data-theme="light"] h5,
-body[data-theme="light"] h6 {
+/* Force proper heading colors with maximum specificity */
+html body[data-theme="light"] h1,
+html body[data-theme="light"] h2, 
+html body[data-theme="light"] h3,
+html body[data-theme="light"] h4,
+html body[data-theme="light"] h5,
+html body[data-theme="light"] h6 {
   color: #181818 !important; /* Force black text in light mode */
 }
 
-body[data-theme="dark"] h1,
-body[data-theme="dark"] h2,
-body[data-theme="dark"] h3,
-body[data-theme="dark"] h4,
-body[data-theme="dark"] h5,
-body[data-theme="dark"] h6 {
+html body[data-theme="dark"] h1,
+html body[data-theme="dark"] h2,
+html body[data-theme="dark"] h3,
+html body[data-theme="dark"] h4,
+html body[data-theme="dark"] h5,
+html body[data-theme="dark"] h6 {
   color: #FFFFFF !important; /* Force white text in dark mode */
 }
 
+/* Alternative approach - target specific page elements */
+html body main h1:first-child,
+html body article h1:first-child {
+  margin-top: 80px !important;
+  color: var(--text-color) !important;
+}
+
 /* Main content areas need spacing too */
-main, article, .content {
-  padding-top: 20px !important; /* Increased padding */
+html body main,
+html body article,
+html body .content {
+  padding-top: 40px !important; /* Much larger padding */
 }
 
 /* Mobile breadcrumb - keep original spacing */
