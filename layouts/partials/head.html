@@ -167,13 +167,14 @@ html body .portfolio .portfolio-grid .portfolio-item img {
 
 /* Simple global fix - push all page content down to avoid header overlap */
 body {
-  margin-top: 50px !important;
+  margin-top: 70px !important; /* Desktop only fix */
 }
 
-/* Mobile adjustment */
+/* Mobile - keep original working spacing */
 @media (max-width: 768px) {
   body {
-    margin-top: 60px !important;
+    margin-top: 20px !important; /* Reset to original mobile spacing */
+    padding-top: 0 !important; /* Remove any conflicting padding */
   }
 }
 
@@ -263,14 +264,21 @@ body {
   }
 }
 
-/* Minimal fixes for header overlap - only target specific overlapping elements */
+/* Desktop breadcrumb adjustments */
 .breadcrumb {
-  margin-top: 20px !important; /* Reduced since body already has margin */
+  margin-top: 10px !important;
 }
 
-/* Homepage gets even less spacing */
+/* Homepage gets less spacing on desktop */
 .homepage-breadcrumb {
-  margin-top: 10px !important;
+  margin-top: -10px !important; /* Pull closer to header on desktop */
+}
+
+/* Mobile breadcrumb - keep original spacing */
+@media (max-width: 768px) {
+  .breadcrumb, .homepage-breadcrumb {
+    margin-top: 10px !important; /* Reset to original mobile spacing */
+  }
 }
 </style>
 
