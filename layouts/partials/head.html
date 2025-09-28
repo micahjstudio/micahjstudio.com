@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+{{ $theme := resources.Get "css/main.css" }}
+{{ if $theme }}
+  <link rel="stylesheet" href="{{ $theme.RelPermalink }}">
+{{ end }}
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+{{ if .Site.Params.customCSS }}
+  {{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ . | relURL }}">
+  {{ end }}
+{{ end }}
