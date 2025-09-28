@@ -96,23 +96,14 @@ a:hover {
   transform: scale(0.98) !important;
 }
 
-/* Fix scroll behavior - remove restrictive scrolling */
+/* Fix scroll behavior - minimal restrictions */
 html {
-  scroll-behavior: smooth !important;
-  touch-action: auto !important;
   -webkit-overflow-scrolling: touch !important;
 }
 
 body {
-  touch-action: auto !important;
   -webkit-overflow-scrolling: touch !important;
   overflow-x: hidden !important;
-  overflow-y: auto !important;
-}
-
-/* Remove any scroll restrictions */
-*, *:before, *:after {
-  touch-action: auto !important;
 }
 
 /* Dark theme colors - make sure they're defined */
@@ -218,17 +209,10 @@ html body .portfolio .portfolio-grid .portfolio-item img {
     touch-action: manipulation !important;
   }
   
-  /* Fix mobile scrolling */
+  /* Fix mobile scrolling - keep it simple */
   html, body {
-    touch-action: auto !important;
     -webkit-overflow-scrolling: touch !important;
     overflow-x: hidden !important;
-  }
-  
-  /* Remove any scroll snap that might be causing issues */
-  * {
-    scroll-snap-type: none !important;
-    scroll-behavior: auto !important;
   }
   
   /* Mobile portfolio grid */
