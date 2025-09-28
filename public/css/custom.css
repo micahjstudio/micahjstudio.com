@@ -98,25 +98,83 @@
   }
 }
 
+/* Fix blue link colors and font rendering */
+a {
+  color: var(--text-color) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Force proper font family inheritance */
+* {
+  font-family: var(--content-font-family) !important;
+}
+
+.main-header nav li a {
+  color: var(--text-color) !important;
+  font-family: var(--title-font-family) !important;
+}
+
+.post-title a {
+  color: var(--text-color) !important;
+  font-family: var(--title-font-family) !important;
+}
+
 /* Font and text improvements for mobile */
 @media (max-width: 768px) {
   body {
-    font-size: 0.85rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.8 !important;
+    font-family: var(--content-font-family) !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
   }
   
   .post-title {
     font-size: 0.8rem !important;
     margin-bottom: 8px !important;
+    font-family: var(--title-font-family) !important;
   }
   
   .post-title a {
     word-break: break-word !important;
+    color: var(--text-color) !important;
+    font-family: var(--title-font-family) !important;
   }
   
-  /* Make sure text is readable */
+  .post-title a:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  /* Make sure headings use proper fonts */
   h1, h2, h3, h4, h5, h6 {
     font-size: 1.2rem !important;
     line-height: 1.4 !important;
+    font-family: var(--header-font-family) !important;
+    font-weight: 700 !important;
+  }
+  
+  /* Header navigation font fix */
+  .main-header nav li a {
+    font-family: var(--title-font-family) !important;
+    color: var(--text-color) !important;
+    font-weight: normal !important;
+  }
+  
+  .main-header nav li a:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  .main-header nav li a.active {
+    color: var(--primary-color) !important;
+  }
+  
+  /* Breadcrumb styling */
+  .breadcrumb {
+    font-family: var(--title-font-family) !important;
+    color: var(--text-color) !important;
   }
 }
