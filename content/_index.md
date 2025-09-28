@@ -1,22 +1,20 @@
 ---
 title: "micahjstudio"
-featured_image: "images/compositions.jpg"
+featured_image: "images/compositions.jpeg"
 ---
-
 <div class="main-image">
-  <img
-    src="/images/compositions.jpeg"
-    alt="Main Image"
-    style="max-width: 600px"
-  />
+ <img
+src="images/compositions.jpeg"
+alt="Main Image"
+style="max-width: 600px"
+ />
 </div>
-
 <div class="portfolio">
-  <div class="index-title">---------------------------------------------------------------------------</div>
-  <div class="portfolio-grid">
-    <div class="portfolio-item">
-      <img src="/images/ipad1.jpeg" alt="Portfolio Item 1" />
-    </div>
+ <div class="index-title">---------------------------------------------------------------------------</div>
+ <div class="portfolio-grid">
+ <div class="portfolio-item">
+ <img src="images/ipad1.jpeg" alt="Portfolio Item 1" />
+ </div>
     <div class="portfolio-item">
       <img src="/images/model5.jpeg" alt="Portfolio Item 2" />
     </div>

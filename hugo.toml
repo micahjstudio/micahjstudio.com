@@ -1,7 +1,7 @@
 baseURL = 'https://micahjstudio.com'
 title = 'micahjstudio'
 languageCode = 'en-us'
-canonifyURLs = false
+canonifyURLs = true
 relativeURLs = false
 
 [[menus.main]]
@@ -32,8 +32,8 @@ weight = 30
   showGithubChart   = true
   math = true
   copyright = ''
-  mainImage = "/images/compositions.jpeg"
-    hero_image = "/images/compositions.jpeg"
+  mainImage = "images/compositions.jpeg"
+  hero_image = "images/compositions.jpeg"
   customCSS = ["css/custom.css"]
 
 [taxonomies]

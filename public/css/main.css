@@ -406,37 +406,3 @@
 	color: var(--text-color);
   }
   
-  .portfolio .portfolio-grid .portfolio-item img {
-	width: 100% !important;
-	max-width: 300px !important;
-	height: 200px !important;
-	display: block !important;
-	object-fit: cover !important;
-	border-radius: 4px;
-	cursor: pointer;
-  }
-
-  .portfolio-grid {
-	display: grid !important;
-	grid-template-columns: repeat(3, 1fr) !important;
-	gap: 20px !important;
-	margin-top: 10px;
-  }
-  
-  .portfolio .portfolio-grid .portfolio-item img {
-	width: 100% !important;
-	max-width: 300px !important;
-	height: 200px !important;
-	display: block !important;
-	object-fit: cover !important;
-	border-radius: 4px;
-	cursor: pointer;
-  }
-
-  .portfolio-grid {
-	display: grid !important;
-	grid-template-columns: repeat(3, 1fr) !important;
-	gap: 20px !important;
-	margin-top: 10px;
-  }
-  

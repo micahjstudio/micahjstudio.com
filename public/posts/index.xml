@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on micahjstudio</title>
-    <link>//localhost:1313/posts/</link>
+    <link>https://micahjstudio.com/posts/</link>
     <description>Recent content in Posts on micahjstudio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 27 Sep 2025 13:49:17 -0500</lastBuildDate>
-    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://micahjstudio.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>slants coffee const docs</title>
-      <link>//localhost:1313/posts/slants/</link>
+      <link>https://micahjstudio.com/posts/slants/</link>
       <pubDate>Sat, 27 Sep 2025 13:49:17 -0500</pubDate>
-      <guid>//localhost:1313/posts/slants/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;object data=&#34;/pdfs/slants.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;//localhost:1313/pdfs/slants.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;</description>
+      <guid>https://micahjstudio.com/posts/slants/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;object data=&#34;/pdfs/slants.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;https://micahjstudio.com/pdfs/slants.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;</description>
     </item>
     <item>
       <title>design/graphics 1 portfolio</title>
-      <link>//localhost:1313/posts/stud1/</link>
+      <link>https://micahjstudio.com/posts/stud1/</link>
       <pubDate>Sat, 27 Sep 2025 13:49:17 -0455</pubDate>
-      <guid>//localhost:1313/posts/stud1/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;object data=&#34;/pdfs/des1.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;//localhost:1313/pdfs/des1.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;&#xA;&lt;object data=&#34;/pdfs/graph1.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;//localhost:1313/pdfs/graph1.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;</description>
+      <guid>https://micahjstudio.com/posts/stud1/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;object data=&#34;/pdfs/des1.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;https://micahjstudio.com/pdfs/des1.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;&#xA;&lt;object data=&#34;/pdfs/graph1.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;https://micahjstudio.com/pdfs/graph1.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;</description>
     </item>
     <item>
       <title>design/graphics 2 portfolio</title>
-      <link>//localhost:1313/posts/stud2/</link>
+      <link>https://micahjstudio.com/posts/stud2/</link>
       <pubDate>Sat, 27 Sep 2025 13:49:17 -0455</pubDate>
-      <guid>//localhost:1313/posts/stud2/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;object data=&#34;/pdfs/stud2.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;//localhost:1313/pdfs/stud2.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;</description>
+      <guid>https://micahjstudio.com/posts/stud2/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;object data=&#34;/pdfs/stud2.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;  &lt;p&gt;PDF cannot be displayed. &lt;a href=&#34;https://micahjstudio.com/pdfs/stud2.pdf&#34;&gt;Download instead&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/object&gt;</description>
     </item>
   </channel>
 </rss>
