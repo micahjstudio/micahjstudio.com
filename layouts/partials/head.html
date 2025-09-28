@@ -75,7 +75,7 @@ a:hover {
   align-items: center !important;
   justify-content: center !important;
   
-  /* Touch improvements - remove touch-action */
+  /* Touch improvements */
   -webkit-tap-highlight-color: rgba(236, 66, 255, 0.3) !important;
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important;
@@ -94,8 +94,6 @@ a:hover {
   background-color: rgba(236, 66, 255, 0.2) !important;
   transform: scale(0.98) !important;
 }
-
-/* No scroll restrictions at all */
 
 /* Dark theme colors - make sure they're defined */
 body[data-theme="dark"] {
@@ -173,7 +171,6 @@ html body .portfolio .portfolio-grid .portfolio-item img {
     width: 100% !important;
     min-width: unset !important;
     padding: 0 20px !important;
-    padding-top: 70px !important; /* Account for fixed header */
   }
   
   .main-header {
@@ -181,16 +178,6 @@ html body .portfolio .portfolio-grid .portfolio-item img {
     left: 0 !important;
     transform: none !important;
     padding: 12px 20px !important;
-    position: fixed !important;
-    top: 0 !important;
-    z-index: 1000 !important;
-    background-color: var(--background-color) !important;
-  }
-  
-  /* Ensure breadcrumb doesn't get covered */
-  .breadcrumb {
-    margin-top: 10px !important;
-    margin-bottom: 15px !important;
   }
   
   /* Double-force horizontal navigation on mobile for all pages */
@@ -217,7 +204,7 @@ html body .portfolio .portfolio-grid .portfolio-item img {
     font-family: 'Fira Code', 'SF Mono', Monaco, monospace !important;
   }
   
-  /* Better mobile touch targets - no touch-action restrictions */
+  /* Better mobile touch targets */
   .main-header nav li a,
   #theme-toggle {
     padding: 8px 4px !important;
@@ -225,8 +212,6 @@ html body .portfolio .portfolio-grid .portfolio-item img {
     display: flex !important;
     align-items: center !important;
   }
-  
-  /* No mobile scroll restrictions */
   
   /* Mobile portfolio grid */
   html body .portfolio .portfolio-grid {
@@ -247,39 +232,6 @@ html body .portfolio .portfolio-grid .portfolio-item img {
   }
 }
 
-/* Desktop fixes - more aggressive breadcrumb spacing */
-html body .breadcrumb {
-  margin-top: 60px !important;
-  margin-bottom: 15px !important;
-}
-
-/* Homepage breadcrumb specific override */
-html body .homepage-breadcrumb {
-  margin-top: 20px !important;
-}
-
-/* Fix PDF positioning - more aggressive selectors */
-html body .container,
-html body main,
-html body article,
-html body .content {
-  padding-top: 60px !important;
-}
-
-/* Override theme's body padding */
-html body {
-  padding-top: 0 !important;
-}
-
-/* Specific fix for PDF embeds */
-html body object[type="application/pdf"] {
-  margin-top: 20px !important;
-}
-
-html body .pdf-container {
-  margin-top: 20px !important;
-}
-
 @media (max-width: 600px) {
   html body .portfolio .portfolio-grid {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -297,38 +249,6 @@ html body .pdf-container {
     grid-template-columns: 1fr !important;
     gap: 10px !important;
   }
-}
-/* Desktop fixes - more aggressive breadcrumb spacing */
-html body .breadcrumb {
-  margin-top: 60px !important;
-  margin-bottom: 15px !important;
-}
-
-/* Homepage breadcrumb specific override */
-html body .homepage-breadcrumb {
-  margin-top: 20px !important;
-}
-
-/* Fix PDF positioning - more aggressive selectors */
-html body .container,
-html body main,
-html body article,
-html body .content {
-  padding-top: 60px !important;
-}
-
-/* Override theme's body padding */
-html body {
-  padding-top: 0 !important;
-}
-
-/* Specific fix for PDF embeds */
-html body object[type="application/pdf"] {
-  margin-top: 20px !important;
-}
-
-html body .pdf-container {
-  margin-top: 20px !important;
 }
 </style>
 
