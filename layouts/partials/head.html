@@ -165,6 +165,18 @@ html body .portfolio .portfolio-grid .portfolio-item img {
   cursor: pointer !important;
 }
 
+/* Simple global fix - push all page content down to avoid header overlap */
+body {
+  margin-top: 50px !important;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  body {
+    margin-top: 60px !important;
+  }
+}
+
 /* Mobile fixes for all pages */
 @media (max-width: 768px) {
   .container, body {
@@ -253,12 +265,12 @@ html body .portfolio .portfolio-grid .portfolio-item img {
 
 /* Minimal fixes for header overlap - only target specific overlapping elements */
 .breadcrumb {
-  margin-top: 50px !important;
+  margin-top: 20px !important; /* Reduced since body already has margin */
 }
 
-/* Homepage gets less spacing since it just has the emoji breadcrumb */
+/* Homepage gets even less spacing */
 .homepage-breadcrumb {
-  margin-top: 20px !important;
+  margin-top: 10px !important;
 }
 </style>
 
