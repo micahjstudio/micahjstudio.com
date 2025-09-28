@@ -5,9 +5,40 @@
 {{ if $theme }}
   <link rel="stylesheet" href="{{ $theme.RelPermalink }}">
 {{ end }}
-<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
-{{ if .Site.Params.customCSS }}
-  {{ range .Site.Params.customCSS }}
-    <link rel="stylesheet" href="{{ . | relURL }}">
-  {{ end }}
-{{ end }}
+<style>
+body .portfolio .portfolio-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+  margin-top: 10px !important;
+}
+
+body .portfolio .portfolio-grid .portfolio-item img {
+  width: 100% !important;
+  max-width: 300px !important;
+  height: 200px !important;
+  display: block !important;
+  object-fit: cover !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+}
+
+@media (max-width: 600px) {
+  body .portfolio .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
+  }
+  
+  body .portfolio .portfolio-grid .portfolio-item img {
+    max-width: 100% !important;
+    height: 150px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  body .portfolio .portfolio-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+}
+</style>
