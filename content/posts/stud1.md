@@ -2,7 +2,6 @@
 date = '2025-09-27T13:49:17-04:55'
 draft = false
 title = 'design/graphics 1 portfolio'
-weight = 2
 tags = ['studio']
 +++
 

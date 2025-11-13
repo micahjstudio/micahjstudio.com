@@ -2,7 +2,7 @@
 title: "micahjstudio"
 featured_image: "images/compositions.jpeg"
 ---
-<div class="main-image">
+<div class="main-image portfolio-item">
  <img
 src="images/compositions.jpeg"
 alt="Main Image"
