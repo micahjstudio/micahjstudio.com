@@ -1,8 +1,7 @@
 +++
 date = '2025-09-27T13:49:17-05:00'
 draft = false
-title = 'slants coffee const docs'
-weight = 1
+title = 'technical drawings'
 tags = ['drafting']
 +++
 
@@ -11,11 +10,11 @@ tags = ['drafting']
 <!-- Replace your PDF object tags with this mobile-friendly version -->
 <div class="pdf-container">
   <div class="pdf-mobile-notice">
-    <p><strong>On mobile?</strong> <a href="/pdfs/slants.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
+    <p><strong>On mobile?</strong> <a href="/pdfs/weener.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
   </div>
-  <object data="/pdfs/slants.pdf" type="application/pdf" width="100%" height="600px">
+  <object data="/pdfs/weener.pdf" type="application/pdf" width="100%" height="600px">
     <div class="pdf-fallback">
-      <p>PDF cannot be displayed. <a href="/pdfs/slants.pdf" target="_blank">Download PDF</a> or <a href="/pdfs/slants.pdf" target="_blank">view in new tab</a>.</p>
+      <p>PDF cannot be displayed. <a href="/pdfs/weener.pdf" target="_blank">Download PDF</a> or <a href="/pdfs/weener.pdf" target="_blank">view in new tab</a>.</p>
     </div>
   </object>
 </div>
