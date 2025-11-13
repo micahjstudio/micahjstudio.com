@@ -6,7 +6,7 @@ featured_image: "images/compositions.jpeg"
  <img
 src="images/compositions.jpeg"
 alt="Main Image"
-style="max-width: 600px"
+style="max-width: 600px; width: 100%; height: auto;"
  />
 </div>
 <div class="portfolio">
