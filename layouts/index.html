@@ -1,12 +1,8 @@
 {{ define "main" }}
   <div class="breadcrumb homepage-breadcrumb">🏠 /home<hr></div>
 
-  <div class="main-image">
-    <img
-      src="{{ .Site.BaseURL }}images/compositions.jpeg"
-      alt="Main Image"
-      style="max-width: 600px; width: 100%; height: auto;"
-    />
+  <div class="main-image portfolio-item">
+    <img src="{{ .Site.Params.mainImageUrl }}" alt="Main Image" style="max-width: 600px; width: 100%; height: auto;" />
   </div>
 
   <div class="portfolio">
@@ -60,7 +56,7 @@
     {{ end }}
   </div>
 
-  <script src="{{ .Site.BaseURL }}js/portfolio.js"></script>
+  <script src="{{ .Site.BaseURL | absURL }}js/portfolio.js"></script>
 
   <style>
   /* CRITICAL MOBILE FIXES - inline to ensure they load */
