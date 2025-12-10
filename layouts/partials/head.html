@@ -349,15 +349,46 @@ html body .singleTitle {
   color: var(--text-color) !important;
 }
 
+/* Force title to appear above fixed header */
+.singleTitle {
+  position: fixed !important;
+  top: 80px !important; /* Just below the 68px header */
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 600px !important;
+  z-index: 1001 !important; /* Above header's 1000 */
+  background-color: var(--background-color) !important;
+  padding: 10px 0 !important;
+  margin: 0 !important;
+}
+
+html body .singleTitle {
+  position: fixed !important;
+  top: 80px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 600px !important;
+  z-index: 1001 !important;
+  background-color: var(--background-color) !important;
+  padding: 10px 0 !important;
+  margin: 0 !important;
+}
+
 @media (max-width: 768px) {
   .singleTitle {
-    margin-top: 10px !important; /* Small since mobile body has 20px margin */
-    padding-top: 15px !important;
+    top: 60px !important;
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    padding: 10px 20px !important;
   }
   
   html body .singleTitle {
-    margin-top: 10px !important;
-    padding-top: 15px !important;
+    top: 60px !important;
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    padding: 10px 20px !important;
   }
 }
 </style>
