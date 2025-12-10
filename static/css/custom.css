@@ -78,45 +78,18 @@ a:hover {
   height: auto !important;
 }
 
-/* FINAL TITLE POSITIONING - Only keep these rules */
-html body main .singleTitle,
-html body article .singleTitle,
-html body .content .singleTitle,
-html body .singleTitle,
-body .singleTitle,
+/* Hide all page titles */
 .singleTitle {
-  margin-top: 150px !important;
-  padding-top: 15px !important;
-  background-color: transparent !important;
-  color: var(--text-color) !important;
+  display: none !important;
 }
 
-/* Mobile title positioning */
-@media (max-width: 768px) {
-  html body main .singleTitle,
-  html body article .singleTitle,
-  html body .content .singleTitle,
-  html body .singleTitle,
-  body .singleTitle,
-  .singleTitle {
-    margin-top: 80px !important;
-    padding-top: 15px !important;
-  }
+html body .singleTitle {
+  display: none !important;
 }
 
-/* Override any h1 rules too */
+/* Also hide h1 first-child elements that might be titles */
 html body main h1:first-child,
 html body article h1:first-child,
 html body .content h1:first-child {
-  margin-top: 150px !important;
-  padding-top: 15px !important;
-}
-
-@media (max-width: 768px) {
-  html body main h1:first-child,
-  html body article h1:first-child,
-  html body .content h1:first-child {
-    margin-top: 80px !important;
-    padding-top: 15px !important;
-  }
+  display: none !important;
 }
