@@ -356,6 +356,32 @@ html body .singleTitle {
     padding-top: 15px !important;
   }
 }
+
+/* Add this at the very end of the style block with maximum specificity */
+html body main .singleTitle,
+html body article .singleTitle,
+html body .content .singleTitle,
+html body div .singleTitle,
+body main .singleTitle,
+body article .singleTitle,
+body .content .singleTitle,
+body div .singleTitle {
+  margin-top: 200px !important;
+  padding-top: 20px !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Force desktop only - no mobile media query interference */
+@media (min-width: 769px) {
+  html body main .singleTitle,
+  html body article .singleTitle,
+  html body .content .singleTitle,
+  html body div .singleTitle {
+    margin-top: 200px !important;
+    padding-top: 20px !important;
+  }
+}
 </style>
 
 <script defer src="/js/portfolio.js"></script>
