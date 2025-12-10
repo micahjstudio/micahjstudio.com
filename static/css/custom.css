@@ -112,3 +112,45 @@ h1:first-child {
     padding-top: 10px !important;
   }
 }
+
+/* FINAL OVERRIDE - Add at the very end of the file */
+/* Force title positioning with maximum specificity */
+html body main .singleTitle,
+html body article .singleTitle,
+html body .content .singleTitle,
+html body .singleTitle,
+body .singleTitle,
+.singleTitle {
+  margin-top: 90px !important;
+  padding-top: 15px !important;
+}
+
+/* Mobile title positioning */
+@media (max-width: 768px) {
+  html body main .singleTitle,
+  html body article .singleTitle,
+  html body .content .singleTitle,
+  html body .singleTitle,
+  body .singleTitle,
+  .singleTitle {
+    margin-top: 60px !important;
+    padding-top: 15px !important;
+  }
+}
+
+/* Override any h1 rules too */
+html body main h1:first-child,
+html body article h1:first-child,
+html body .content h1:first-child {
+  margin-top: 90px !important;
+  padding-top: 15px !important;
+}
+
+@media (max-width: 768px) {
+  html body main h1:first-child,
+  html body article h1:first-child,
+  html body .content h1:first-child {
+    margin-top: 60px !important;
+    padding-top: 15px !important;
+  }
+}
