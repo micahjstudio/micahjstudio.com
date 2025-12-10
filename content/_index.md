@@ -15,7 +15,7 @@ featured_image: "images/compositions.jpeg"
       <img src="/images/model6.jpeg" alt="Portfolio Item 3" />
     </div>
     <div class="portfolio-item">
-      <img src="/images/ipad3.jpeg" alt="Portfolio Item 4" />
+      <img src="/images/buddha1.jpeg" alt="Portfolio Item 4" />
     </div>
     <div class="portfolio-item">
       <img src="/images/3d1.png" alt="Portfolio Item 5" />
@@ -24,16 +24,16 @@ featured_image: "images/compositions.jpeg"
       <img src="/images/model7.jpeg" alt="Portfolio Item 6" />
     </div>
     <div class="portfolio-item">
-      <img src="/images/ipad2.jpeg" alt="Portfolio Item 7" />
+      <img src="/images/buddha2.jpeg" alt="Portfolio Item 7" />
     </div>
     <div class="portfolio-item">
       <img src="/images/model2.jpeg" alt="Portfolio Item 8" />
     </div>
     <div class="portfolio-item">
-      <img src="/images/3d3.png" alt="Portfolio Item 9" />
+      <img src="/images/buddha3.jpeg" alt="Portfolio Item 9" />
     </div>
     <div class="portfolio-item">
-      <img src="/images/3d2.png" alt="Portfolio Item 10" />
+      <img src="/images/worm.jpeg" alt="Portfolio Item 10" />
     </div>
     <div class="portfolio-item">
       <img src="/images/ipad5.jpeg" alt="Portfolio Item 11" />
