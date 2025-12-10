@@ -332,27 +332,5 @@ html body .content {
 
 /* Fix title positioning - account for body margin + header height */
 /* Maximum specificity override */
-html body main .singleTitle,
-html body article .singleTitle,
-html body .content .singleTitle,
-html body div.overlay-text .singleTitle {
-  margin-top: 150px !important;
-  padding-top: 20px !important;
-  position: relative !important;
-  z-index: 10 !important;
-  background-color: red !important; /* Temporary to see if it works */
-  color: white !important;
-}
-
-@media (max-width: 768px) {
-  html body main .singleTitle,
-  html body article .singleTitle,
-  html body .content .singleTitle,
-  html body div.overlay-text .singleTitle {
-    margin-top: 80px !important;
-    padding-top: 15px !important;
-  }
-}
-</style>
 
 <script defer src="/js/portfolio.js"></script>
