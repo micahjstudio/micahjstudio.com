@@ -6,60 +6,72 @@ tags = ['blog']
 weight = 1
 +++
 
-Micah James McCormack
-Phone: 361-739-8118 		Email: micah@micahjstudio.com		Portfolio: micahjstudio.com
+----------
 
-Objective:
-Architecture student seeking to advance my career in architectural design. 
+<!-- Replace your PDF object tags with this mobile-friendly version -->
+<div class="pdf-container">
+  <div class="pdf-mobile-notice">
+    <p><strong>On mobile?</strong> <a href="/pdfs/resume.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
+  </div>
+  <object data="/pdfs/resume.pdf" type="application/pdf" width="100%" height="600px">
+    <div class="pdf-fallback">
+      <p>PDF cannot be displayed. <a href="/pdfs/resume.pdf" target="_blank">Download PDF</a> or <a href="/pdfs/resume.pdf" target="_blank">view in new tab</a>.</p>
+    </div>
+  </object>
+</div>
 
-Education:
-Associates Architecture 										Currently     Del Mar College Corpus Christi, TX
+<style>
+.pdf-container {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-Bachelor’s degree in architecture 									Currently     
-Del Mar College Corpus Christi, TX
+.pdf-mobile-notice {
+  background: #f5f5f5;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  display: none;
+}
 
-Architectural Design Certificates: Level I & II							Completed     
-Del Mar College Corpus Christi, TX
+.pdf-mobile-notice a {
+  color: #ec42ff !important;
+  text-decoration: underline !important;
+}
 
-Honors:
-Dean’s List
-President’s List 
-Team Leadership & Peer Tutoring Achievements
-Leadership Award for design creativity
-Commendations for Tutoring in Architectural program
+.pdf-fallback {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
 
-Skills:
-Rhino 8 (advanced)
-AutoCAD (certified)
-Revit (certified)
-Architectural Drafting & Design
-3D modeling & visualization
+.pdf-fallback a {
+  color: #ec42ff !important;
+  text-decoration: underline !important;
+  margin: 0 10px;
+}
 
-Stripes – Cashier (2023–2024)
-•	Processed customer transactions, restocked shelves, and maintained a clean, organized store.
-•	Provided customer service and followed proper ID verification and safety procedures.
+/* Show mobile notice on small screens */
+@media (max-width: 768px) {
+  .pdf-mobile-notice {
+    display: block !important;
+  }
+  
+  object[type="application/pdf"] {
+    height: 400px !important;
+  }
+}
 
-Laborer – Unloading Oil Drums (2021–2024)
-•	Unloaded heavy oil drums using manual equipment and followed all safety and PPE protocols.
-•	Organized inventory and inspected shipments for damage or leaks.
-
-S&G – Cashier (2023)
-•	Processed sales, verified IDs for age-restricted products, and maintained store cleanliness.
-•	Assisted customers with product questions and restocked inventory.
-
-Spirit Halloween – Cashier/Supervisor (2022)
-•	Processed purchases, assisted customers, and set up merchandise displays.
-•	Supervised staff, trained new employees, and handled opening/closing duties.
-
-Texas Roadhouse – Host/Dishwasher (2021)
-•	Greeted and seated guests, managed waitlists, and supported front-of-house service.
-•	Operated dishwashing equipment and maintained sanitation in high-volume kitchen shifts.
-
-References:
-
-Garrett Klepac 		Professor: Del Mar College			Email: gklepac1@delmar.edu
-
-Bradford Eilering		Professor: Del Mar College			Email: beilering@delmar.edu
-
-Nelda Sanchez 		Academic Advisor: Del Mar College	Email: nsanchez@delmar.edu
-
+@media (max-width: 480px) {
+  object[type="application/pdf"] {
+    height: 300px !important;
+  }
+  
+  .pdf-mobile-notice p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+}
+</style>
