@@ -297,60 +297,6 @@ div.homepage-breadcrumb {
   margin-top: -25px !important; /* Alternative selector */
 }
 
-/* Fix page titles and content being hidden under header - target actual title class */
-.singleTitle, h1 {
-  margin-top: 120px !important; /* Increased from 90px */
-  padding-top: 10px !important;
-}
-
-@media (max-width: 768px) {
-  .singleTitle, h1 {
-    margin-top: 80px !important; /* Increased from 50px */
-    padding-top: 10px !important;
-  }
-}
-
-/* Fix singleTitle colors specifically */
-body[data-theme="light"] .singleTitle {
-  color: #181818 !important; /* Force black text in light mode */
-}
-
-body[data-theme="dark"] .singleTitle {
-  color: #FFFFFF !important; /* Force white text in dark mode */
-}
-
-html body[data-theme="light"] .singleTitle {
-  color: #181818 !important; /* Higher specificity for light mode */
-}
-
-html body[data-theme="dark"] .singleTitle {
-  color: #FFFFFF !important; /* Higher specificity for dark mode */
-}
-
-/* Fix page titles and content being hidden under header - maximum specificity */
-html body h1,
-html body h2,
-html body h3,
-html body h4,
-html body h5,
-html body h6 {
-  margin-top: 90px !important;
-  padding-top: 15px !important;
-}
-
-/* Mobile override for headings */
-@media (max-width: 768px) {
-  html body h1,
-  html body h2,
-  html body h3,
-  html body h4,
-  html body h5,
-  html body h6 {
-    margin-top: 60px !important;
-    padding-top: 15px !important;
-  }
-}
-
 /* Force proper heading colors with maximum specificity */
 html body[data-theme="light"] h1,
 html body[data-theme="light"] h2, 
