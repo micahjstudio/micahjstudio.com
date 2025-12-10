@@ -1,6 +1,6 @@
 +++
 title = "About"
-date = '2025-12-10T13:49:17-05:00'
+date = '2025-12-09T13:49:17-05:00'
 draft = false
 tags = ['blog']
 weight = 2
