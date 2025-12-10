@@ -15,7 +15,7 @@ html, body, * {
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', sans-serif !important;
 }
 
-/* Fix title and date spacing globally */
+/* Hide page titles */
 .singleTitle {
   display: none !important;
 }
@@ -32,17 +32,19 @@ html body .singleTitle {
 /* Add bottom spacing to all pages */
 body {
   padding-bottom: 80px !important;
+  margin-top: 70px !important;
 }
 
 main, article, .content {
   padding-bottom: 80px !important;
+  padding-top: 40px !important;
 }
 
 .main-header, .main-header *, .post-title, .post-title *, .breadcrumb, .index-title {
   font-family: 'Fira Code', 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', monospace !important;
 }
 
-/* FORCE navigation to be horizontal on ALL pages */
+/* Navigation styles */
 html body .main-header nav,
 .main-header nav,
 header.main-header nav {
@@ -69,7 +71,7 @@ header.main-header nav li {
   height: auto !important;
 }
 
-/* Fix all link colors on all pages */
+/* Link colors */
 a {
   color: #181818 !important;
   text-decoration: none !important;
@@ -88,7 +90,7 @@ a:hover {
   color: #ec42ff !important;
 }
 
-/* Fix theme toggle for mobile */
+/* Theme toggle */
 #theme-toggle {
   cursor: pointer !important;
   padding: 8px 4px !important;
@@ -97,14 +99,6 @@ a:hover {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  
-  /* Touch improvements */
-  -webkit-tap-highlight-color: rgba(236, 66, 255, 0.3) !important;
-  -webkit-touch-callout: none !important;
-  -webkit-user-select: none !important;
-  user-select: none !important;
-  
-  /* Visual feedback */
   transition: all 0.2s ease !important;
   border-radius: 4px !important;
 }
@@ -113,12 +107,7 @@ a:hover {
   background-color: rgba(236, 66, 255, 0.1) !important;
 }
 
-#theme-toggle:active {
-  background-color: rgba(236, 66, 255, 0.2) !important;
-  transform: scale(0.98) !important;
-}
-
-/* Dark theme colors - make sure they're defined */
+/* Theme colors */
 body[data-theme="dark"] {
   --background-color: #181818 !important;
   --text-color: #FFFFFF !important;
@@ -137,7 +126,7 @@ body[data-theme="light"] {
   color: #181818 !important;
 }
 
-/* Fix dark theme link colors */
+/* Dark theme links */
 body[data-theme="dark"] a {
   color: #FFFFFF !important;
 }
@@ -154,6 +143,7 @@ body[data-theme="dark"] .main-header nav li a:hover {
   color: #ec42ff !important;
 }
 
+/* Light theme links */
 body[data-theme="light"] a {
   color: #181818 !important;
 }
@@ -170,7 +160,7 @@ body[data-theme="light"] .main-header nav li a:hover {
   color: #ec42ff !important;
 }
 
-/* Your original portfolio grid styles */
+/* Portfolio grid */
 html body .portfolio .portfolio-grid {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
@@ -188,21 +178,13 @@ html body .portfolio .portfolio-grid .portfolio-item img {
   cursor: pointer !important;
 }
 
-/* Simple global fix - push all page content down to avoid header overlap */
-body {
-  margin-top: 70px !important; /* Desktop only fix */
-}
-
-/* Mobile - keep original working spacing */
+/* Mobile styles */
 @media (max-width: 768px) {
   body {
-    margin-top: 20px !important; /* Reset to original mobile spacing */
-    padding-top: 0 !important; /* Remove any conflicting padding */
+    margin-top: 20px !important;
+    padding-top: 0 !important;
   }
-}
-
-/* Mobile fixes for all pages */
-@media (max-width: 768px) {
+  
   .container, body {
     width: 100% !important;
     min-width: unset !important;
@@ -216,7 +198,6 @@ body {
     padding: 12px 20px !important;
   }
   
-  /* Double-force horizontal navigation on mobile for all pages */
   html body .main-header nav,
   .main-header nav {
     display: flex !important;
@@ -231,16 +212,6 @@ body {
     width: auto !important;
   }
   
-  /* Ensure fonts load on mobile */
-  html, body, * {
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
-  }
-  
-  .main-header, .post-title, .breadcrumb, .index-title {
-    font-family: 'Fira Code', 'SF Mono', Monaco, monospace !important;
-  }
-  
-  /* Better mobile touch targets */
   .main-header nav li a,
   #theme-toggle {
     padding: 8px 4px !important;
@@ -249,7 +220,6 @@ body {
     align-items: center !important;
   }
   
-  /* Mobile portfolio grid */
   html body .portfolio .portfolio-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
@@ -258,13 +228,6 @@ body {
   html body .portfolio .portfolio-grid .portfolio-item img {
     max-width: 100% !important;
     height: 150px !important;
-  }
-  
-  /* Mobile theme toggle */
-  #theme-toggle {
-    font-size: 0.9rem !important;
-    padding: 10px 6px !important;
-    margin-left: 5px !important;
   }
 }
 
@@ -272,11 +235,6 @@ body {
   html body .portfolio .portfolio-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
-  }
-  
-  html body .portfolio .portfolio-grid .portfolio-item img {
-    max-width: 100% !important;
-    height: 150px !important;
   }
 }
 
@@ -287,28 +245,23 @@ body {
   }
 }
 
-/* Desktop breadcrumb adjustments */
+/* Breadcrumb adjustments */
 .breadcrumb {
-  margin-top: -25px !important; /* Bring regular breadcrumbs up to match homepage level */
+  margin-top: -25px !important;
 }
 
-/* Homepage gets less spacing on desktop - higher specificity */
 html body .homepage-breadcrumb {
-  margin-top: -25px !important; /* Even more negative margin with higher specificity */
+  margin-top: -25px !important;
 }
 
-div.homepage-breadcrumb {
-  margin-top: -25px !important; /* Alternative selector */
-}
-
-/* Force proper heading colors with maximum specificity */
+/* Heading colors */
 html body[data-theme="light"] h1,
 html body[data-theme="light"] h2, 
 html body[data-theme="light"] h3,
 html body[data-theme="light"] h4,
 html body[data-theme="light"] h5,
 html body[data-theme="light"] h6 {
-  color: #181818 !important; /* Force black text in light mode */
+  color: #181818 !important;
 }
 
 html body[data-theme="dark"] h1,
@@ -317,24 +270,8 @@ html body[data-theme="dark"] h3,
 html body[data-theme="dark"] h4,
 html body[data-theme="dark"] h5,
 html body[data-theme="dark"] h6 {
-  color: #FFFFFF !important; /* Force white text in dark mode */
+  color: #FFFFFF !important;
 }
-
-/* Alternative approach - target specific page elements */
-html body main h1:first-child,
-html body article h1:first-child {
-  margin-top: 80px !important;
-  color: var(--text-color) !important;
-}
-
-/* Main content areas need spacing too */
-html body main,
-html body article,
-html body .content {
-  padding-top: 40px !important; /* Much larger padding */
-}
-
-/* Fix title positioning - account for body margin + header height */
-/* Maximum specificity override */
+</style>
 
 <script defer src="/js/portfolio.js"></script>
