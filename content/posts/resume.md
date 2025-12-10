@@ -3,7 +3,7 @@ date = '2025-12-09T13:49:17-04:55'
 draft = false
 title = 'resume'
 tags = ['blog']
-weight = 2
+weight = 1
 +++
 
 Micah James McCormack
@@ -56,7 +56,10 @@ Texas Roadhouse – Host/Dishwasher (2021)
 •	Operated dishwashing equipment and maintained sanitation in high-volume kitchen shifts.
 
 References:
+
 Garrett Klepac 		Professor: Del Mar College			Email: gklepac1@delmar.edu
+
 Bradford Eilering		Professor: Del Mar College			Email: beilering@delmar.edu
+
 Nelda Sanchez 		Academic Advisor: Del Mar College	Email: nsanchez@delmar.edu
 

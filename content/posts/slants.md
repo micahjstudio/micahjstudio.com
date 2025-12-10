@@ -1,8 +1,7 @@
 +++
-date = '2025-09-27T13:49:17-05:00'
+date = '2025-12-08T13:49:17-05:00'
 draft = false
 title = 'slants coffee const docs'
-weight = 2
 tags = ['drafting']
 +++
 
