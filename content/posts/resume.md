@@ -3,7 +3,7 @@ date = '2025-12-09T13:49:17-04:55'
 draft = false
 title = 'resume'
 tags = ['blog']
-weight = 1
+weight = 2
 +++
 
 ----------
