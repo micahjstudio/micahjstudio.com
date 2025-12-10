@@ -15,13 +15,29 @@ html, body, * {
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', sans-serif !important;
 }
 
-/* Hide page titles */
+/* Hide page titles - aggressive override */
 .singleTitle {
   display: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 html body .singleTitle {
   display: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Override any red backgrounds */
+.singleTitle,
+.overlay-text .singleTitle,
+div.overlay-text .singleTitle,
+.content .singleTitle,
+main .singleTitle,
+article .singleTitle {
+  display: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 .overlay-text small {

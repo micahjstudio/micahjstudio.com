@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const portfolioImages = document.querySelectorAll('.portfolio-item img');
   console.log('Found images:', portfolioImages.length);
   
+  // Only run if we actually have portfolio images
+  if (portfolioImages.length === 0) {
+    console.log('No portfolio images found, skipping setup');
+    return;
+  }
+  
   portfolioImages.forEach((img, index) => {
     console.log('Setting up image', index, img.src);
     img.addEventListener('click', function(e) {
