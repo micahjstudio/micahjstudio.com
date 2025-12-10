@@ -363,33 +363,3 @@ html body .singleTitle {
 </style>
 
 <script defer src="/js/portfolio.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const title = document.querySelector('.singleTitle');
-  if (title) {
-    // Force desktop spacing
-    if (window.innerWidth > 768) {
-      title.style.marginTop = '200px';
-      title.style.paddingTop = '20px';
-    } else {
-      title.style.marginTop = '80px';
-      title.style.paddingTop = '15px';
-    }
-  }
-});
-
-// Also handle window resize
-window.addEventListener('resize', function() {
-  const title = document.querySelector('.singleTitle');
-  if (title) {
-    if (window.innerWidth > 768) {
-      title.style.marginTop = '200px';
-      title.style.paddingTop = '20px';
-    } else {
-      title.style.marginTop = '80px';
-      title.style.paddingTop = '15px';
-    }
-  }
-});
-</script>
