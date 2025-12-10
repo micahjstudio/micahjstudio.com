@@ -3,6 +3,7 @@ title = "About"
 date = '2025-09-27T13:49:17-05:00'
 draft = false
 tags = ['blog']
+weight = 1
 +++
 
 My name is Micah, I'm an artist, a photographer, a writer, and a student. I'm currently studying architecture at Del Mar College.

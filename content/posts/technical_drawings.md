@@ -1,7 +1,7 @@
 +++
 date = '2025-11-28T13:49:17-05:00'
 draft = false
-title = 'technical drawings'
+title = 'CAD Drawings'
 tags = ['drafting']
 +++
 
