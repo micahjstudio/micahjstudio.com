@@ -330,34 +330,33 @@ html body .content {
   padding-top: 40px !important; /* Much larger padding */
 }
 
-/* Fix title positioning - push above navigation */
+/* Fix title positioning - account for body margin + header height */
 .singleTitle {
-  margin-top: 300px !important;
+  margin-top: 20px !important; /* Much smaller since body already has 70px margin */
   padding-top: 20px !important;
   position: relative !important;
   z-index: 9999 !important;
-  background-color: red !important; /* Temporary to see positioning */
-  color: white !important;
+  background-color: transparent !important; /* Remove red */
+  color: var(--text-color) !important;
 }
 
 html body .singleTitle {
-  margin-top: 300px !important;
+  margin-top: 20px !important;
   padding-top: 20px !important;
   position: relative !important;
   z-index: 9999 !important;
-  background-color: red !important;
-  color: white !important;
+  background-color: transparent !important;
+  color: var(--text-color) !important;
 }
 
-/* Add back mobile with smaller spacing */
 @media (max-width: 768px) {
   .singleTitle {
-    margin-top: 80px !important;
+    margin-top: 10px !important; /* Small since mobile body has 20px margin */
     padding-top: 15px !important;
   }
   
   html body .singleTitle {
-    margin-top: 80px !important;
+    margin-top: 10px !important;
     padding-top: 15px !important;
   }
 }
