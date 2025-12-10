@@ -2,13 +2,6 @@
 title: "micahjstudio"
 featured_image: "images/compositions.jpeg"
 ---
-<div class="main-image portfolio-item">
- <img
-src="images/compositions.jpeg"
-alt="Main Image"
-style="max-width: 600px; width: 100%; height: auto;"
- />
-</div>
 <div class="portfolio">
  <div class="index-title">---------------------------------------------------------------------------</div>
  <div class="portfolio-grid">

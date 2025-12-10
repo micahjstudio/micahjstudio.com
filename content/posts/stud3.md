@@ -1,7 +1,7 @@
 +++
 date = '2025-09-27T13:49:17-04:55'
 draft = false
-title = 'studio 2 portfolio'
+title = 'studio 3 portfolio'
 tags = ['studio']
 +++
 
@@ -10,11 +10,11 @@ tags = ['studio']
 <!-- Replace your PDF object tags with this mobile-friendly version -->
 <div class="pdf-container">
   <div class="pdf-mobile-notice">
-    <p><strong>On mobile?</strong> <a href="/pdfs/stud2.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
+    <p><strong>On mobile?</strong> <a href="/pdfs/stud3.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
   </div>
-  <object data="/pdfs/stud2.pdf" type="application/pdf" width="100%" height="600px">
+  <object data="/pdfs/stud3.pdf" type="application/pdf" width="100%" height="600px">
     <div class="pdf-fallback">
-      <p>PDF cannot be displayed. <a href="/pdfs/stud2.pdf" target="_blank">Download PDF</a> or <a href="/pdfs/stud2.pdf" target="_blank">view in new tab</a>.</p>
+      <p>PDF cannot be displayed. <a href="/pdfs/stud3.pdf" target="_blank">Download PDF</a> or <a href="/pdfs/stud3.pdf" target="_blank">view in new tab</a>.</p>
     </div>
   </object>
 </div>
