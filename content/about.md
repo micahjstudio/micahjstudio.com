@@ -1,5 +1,5 @@
 +++
-title = "About"
+title = "about"
 date = '2025-12-09T13:49:17-05:00'
 draft = false
 tags = ['blog']
