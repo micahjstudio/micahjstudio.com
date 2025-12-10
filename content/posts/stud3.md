@@ -1,5 +1,5 @@
 +++
-date = '2025-09-27T13:49:17-04:55'
+date = '2025-12-9T13:49:17-04:55'
 draft = false
 title = 'studio 3 portfolio'
 tags = ['studio']

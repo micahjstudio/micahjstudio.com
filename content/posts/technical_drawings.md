@@ -1,5 +1,5 @@
 +++
-date = '2025-09-27T13:49:17-05:00'
+date = '2025-11-28T13:49:17-05:00'
 draft = false
 title = 'technical drawings'
 tags = ['drafting']
