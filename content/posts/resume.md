@@ -3,7 +3,7 @@ date = '2025-12-09T13:49:17-04:55'
 draft = false
 title = 'resume'
 tags = ['blog']
-weight = 1
+weight = 2
 +++
 
 Micah James McCormack
@@ -38,15 +38,19 @@ Architectural Drafting & Design
 Stripes – Cashier (2023–2024)
 •	Processed customer transactions, restocked shelves, and maintained a clean, organized store.
 •	Provided customer service and followed proper ID verification and safety procedures.
+
 Laborer – Unloading Oil Drums (2021–2024)
 •	Unloaded heavy oil drums using manual equipment and followed all safety and PPE protocols.
 •	Organized inventory and inspected shipments for damage or leaks.
+
 S&G – Cashier (2023)
 •	Processed sales, verified IDs for age-restricted products, and maintained store cleanliness.
 •	Assisted customers with product questions and restocked inventory.
+
 Spirit Halloween – Cashier/Supervisor (2022)
 •	Processed purchases, assisted customers, and set up merchandise displays.
 •	Supervised staff, trained new employees, and handled opening/closing duties.
+
 Texas Roadhouse – Host/Dishwasher (2021)
 •	Greeted and seated guests, managed waitlists, and supported front-of-house service.
 •	Operated dishwashing equipment and maintained sanitation in high-volume kitchen shifts.

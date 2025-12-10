@@ -44,3 +44,5 @@ Instagram: [@mi.cah.j](https://www.instagram.com/mi.cah.j/)
 I’m building a unique blend of creative vision + technical grounding. I see architecture, art, and storytelling as interconnected — and I strive to bring that into every draft, photograph, or design I touch.
 
 If you want someone who understands both the craft and the creativity behind each project, I’m your guy.
+
+View my resume here (https://micahjstudio.com/posts/resume/)
