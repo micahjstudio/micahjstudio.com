@@ -29,6 +29,51 @@ html, body, * {
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', sans-serif !important;
 }
 
+ 
+.singleTitle {
+  display: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+html body .singleTitle {
+  display: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+ 
+.singleTitle,
+.overlay-text .singleTitle,
+div.overlay-text .singleTitle,
+.content .singleTitle,
+main .singleTitle,
+article .singleTitle {
+  display: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+ 
+.overlay-text small {
+  display: none !important;
+}
+
+html body .overlay-text small {
+  display: none !important;
+}
+
+ 
+body {
+  padding-bottom: 80px !important;
+  margin-top: 70px !important;
+}
+
+main, article, .content {
+  padding-bottom: 80px !important;
+  padding-top: 40px !important;
+}
+
 .main-header, .main-header *, .post-title, .post-title *, .breadcrumb, .index-title {
   font-family: 'Fira Code', 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', monospace !important;
 }
@@ -88,25 +133,12 @@ a:hover {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  
-   
-  -webkit-tap-highlight-color: rgba(236, 66, 255, 0.3) !important;
-  -webkit-touch-callout: none !important;
-  -webkit-user-select: none !important;
-  user-select: none !important;
-  
-   
   transition: all 0.2s ease !important;
   border-radius: 4px !important;
 }
 
 #theme-toggle:hover {
   background-color: rgba(236, 66, 255, 0.1) !important;
-}
-
-#theme-toggle:active {
-  background-color: rgba(236, 66, 255, 0.2) !important;
-  transform: scale(0.98) !important;
 }
 
  
@@ -145,6 +177,7 @@ body[data-theme="dark"] .main-header nav li a:hover {
   color: #ec42ff !important;
 }
 
+ 
 body[data-theme="light"] a {
   color: #181818 !important;
 }
@@ -180,20 +213,12 @@ html body .portfolio .portfolio-grid .portfolio-item img {
 }
 
  
-body {
-  margin-top: 70px !important;  
-}
-
- 
 @media (max-width: 768px) {
   body {
-    margin-top: 20px !important;  
-    padding-top: 0 !important;  
+    margin-top: 20px !important;
+    padding-top: 0 !important;
   }
-}
-
- 
-@media (max-width: 768px) {
+  
   .container, body {
     width: 100% !important;
     min-width: unset !important;
@@ -207,7 +232,6 @@ body {
     padding: 12px 20px !important;
   }
   
-   
   html body .main-header nav,
   .main-header nav {
     display: flex !important;
@@ -222,16 +246,6 @@ body {
     width: auto !important;
   }
   
-   
-  html, body, * {
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
-  }
-  
-  .main-header, .post-title, .breadcrumb, .index-title {
-    font-family: 'Fira Code', 'SF Mono', Monaco, monospace !important;
-  }
-  
-   
   .main-header nav li a,
   #theme-toggle {
     padding: 8px 4px !important;
@@ -240,7 +254,6 @@ body {
     align-items: center !important;
   }
   
-   
   html body .portfolio .portfolio-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
@@ -249,13 +262,6 @@ body {
   html body .portfolio .portfolio-grid .portfolio-item img {
     max-width: 100% !important;
     height: 150px !important;
-  }
-  
-   
-  #theme-toggle {
-    font-size: 0.9rem !important;
-    padding: 10px 6px !important;
-    margin-left: 5px !important;
   }
 }
 
@@ -263,11 +269,6 @@ body {
   html body .portfolio .portfolio-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
-  }
-  
-  html body .portfolio .portfolio-grid .portfolio-item img {
-    max-width: 100% !important;
-    height: 150px !important;
   }
 }
 
@@ -280,55 +281,11 @@ body {
 
  
 .breadcrumb {
-  margin-top: -25px !important;  
+  margin-top: -25px !important;
 }
 
- 
 html body .homepage-breadcrumb {
-  margin-top: -25px !important;  
-}
-
-div.homepage-breadcrumb {
-  margin-top: -25px !important;  
-}
-
- 
-.singleTitle {
-  margin-top: 80px !important;
-  padding-top: 40px !important;
-}
-
-html body .singleTitle {
-  margin-top: 80px !important;
-  padding-top: 40px !important;
-}
-
- 
-body[data-theme="light"] .singleTitle {
-  color: #181818 !important;  
-}
-
-body[data-theme="dark"] .singleTitle {
-  color: #FFFFFF !important;  
-}
-
-html body[data-theme="light"] .singleTitle {
-  color: #181818 !important;  
-}
-
-html body[data-theme="dark"] .singleTitle {
-  color: #FFFFFF !important;  
-}
-
- 
-html body h1,
-html body h2,
-html body h3,
-html body h4,
-html body h5,
-html body h6 {
-  margin-top: 80px !important;  
-  padding-top: 20px !important;
+  margin-top: -25px !important;
 }
 
  
@@ -338,7 +295,7 @@ html body[data-theme="light"] h3,
 html body[data-theme="light"] h4,
 html body[data-theme="light"] h5,
 html body[data-theme="light"] h6 {
-  color: #181818 !important;  
+  color: #181818 !important;
 }
 
 html body[data-theme="dark"] h1,
@@ -347,100 +304,12 @@ html body[data-theme="dark"] h3,
 html body[data-theme="dark"] h4,
 html body[data-theme="dark"] h5,
 html body[data-theme="dark"] h6 {
-  color: #FFFFFF !important;  
-}
-
- 
-html body main h1:first-child,
-html body article h1:first-child {
-  margin-top: 80px !important;
-  color: var(--text-color) !important;
-}
-
- 
-html body main,
-html body article,
-html body .content {
-  padding-top: 40px !important;  
+  color: #FFFFFF !important;
 }
 </style>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const themeToggle = document.getElementById('theme-toggle');
-  
-  if (!themeToggle) {
-    console.log('Theme toggle element not found');
-    return;
-  }
-  
-  
-  let currentTheme = localStorage.getItem('theme') || 'light';
-  
-  
-  document.body.setAttribute('data-theme', currentTheme);
-  themeToggle.textContent = currentTheme === 'dark' ? '/tolight' : '/todark';
-  
-  
-  function toggleTheme(e) {
-    if (e) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    
-    console.log('Toggle clicked, current theme:', currentTheme);
-    
-    
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    currentTheme = newTheme;
-    
-    
-    document.body.setAttribute('data-theme', newTheme);
-    
-    
-    try {
-      localStorage.setItem('theme', newTheme);
-    } catch (e) {
-      try {
-        sessionStorage.setItem('theme', newTheme);
-      } catch (e2) {
-        console.log('Storage not available');
-      }
-    }
-    
-    themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
-    
-    console.log('Theme switched to:', newTheme);
-  }
-  
-  
-  themeToggle.addEventListener('click', toggleTheme, { passive: false });
-  
-  
-  themeToggle.addEventListener('touchend', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleTheme(e);
-  }, { passive: false });
-  
-  
-  themeToggle.addEventListener('touchstart', function(e) {
-    themeToggle.style.opacity = '0.7';
-  }, { passive: true });
-  
-  themeToggle.addEventListener('touchcancel', function(e) {
-    themeToggle.style.opacity = '1';
-  }, { passive: true });
-  
-  themeToggle.addEventListener('touchend', function(e) {
-    setTimeout(() => {
-      themeToggle.style.opacity = '1';
-    }, 150);
-  }, { passive: true });
-  
-  console.log('Theme toggle initialized, current theme:', currentTheme);
-});
-</script>
+
+
 </head>
 <body>
     <header class="main-header">
@@ -511,9 +380,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
       <a href="https://micahjstudio.com/tags/blog/" class="page-link"> # Blog</a>
     
-      <a href="https://micahjstudio.com/tags/drafting/" class="page-link"> # Drafting</a>
-    
       <a href="https://micahjstudio.com/tags/studio/" class="page-link"> # Studio</a>
+    
+      <a href="https://micahjstudio.com/tags/drafting/" class="page-link"> # Drafting</a>
     
   </div>
 </div>

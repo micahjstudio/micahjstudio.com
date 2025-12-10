@@ -2,34 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://micahjstudio.com/posts/slants/</loc>
-    <lastmod>2025-09-27T13:49:17-05:00</lastmod>
-  </url><url>
-    <loc>https://micahjstudio.com/posts/stud1/</loc>
-    <lastmod>2025-09-27T13:49:17-04:55</lastmod>
-  </url><url>
-    <loc>https://micahjstudio.com/posts/stud2/</loc>
-    <lastmod>2025-09-27T13:49:17-04:55</lastmod>
-  </url><url>
     <loc>https://micahjstudio.com/about/</loc>
-    <lastmod>2025-09-27T13:49:17-05:00</lastmod>
+    <lastmod>2025-12-09T13:49:17-05:00</lastmod>
+  </url><url>
+    <loc>https://micahjstudio.com/posts/resume/</loc>
+    <lastmod>2025-12-09T13:49:17-04:55</lastmod>
   </url><url>
     <loc>https://micahjstudio.com/tags/blog/</loc>
-    <lastmod>2025-09-27T13:49:17-05:00</lastmod>
-  </url><url>
-    <loc>https://micahjstudio.com/tags/drafting/</loc>
-    <lastmod>2025-09-27T13:49:17-05:00</lastmod>
+    <lastmod>2025-12-09T13:49:17-05:00</lastmod>
   </url><url>
     <loc>https://micahjstudio.com/</loc>
-    <lastmod>2025-09-27T13:49:17-05:00</lastmod>
-  </url><url>
-    <loc>https://micahjstudio.com/posts/</loc>
-    <lastmod>2025-09-27T13:49:17-05:00</lastmod>
+    <lastmod>2025-12-09T13:49:17-05:00</lastmod>
   </url><url>
     <loc>https://micahjstudio.com/tags/</loc>
-    <lastmod>2025-09-27T13:49:17-05:00</lastmod>
+    <lastmod>2025-12-09T13:49:17-05:00</lastmod>
+  </url><url>
+    <loc>https://micahjstudio.com/posts/</loc>
+    <lastmod>2025-12-09T13:49:17-04:55</lastmod>
   </url><url>
     <loc>https://micahjstudio.com/tags/studio/</loc>
+    <lastmod>2025-12-09T13:49:17-04:55</lastmod>
+  </url><url>
+    <loc>https://micahjstudio.com/posts/stud3/</loc>
+    <lastmod>2025-12-09T13:49:17-04:55</lastmod>
+  </url><url>
+    <loc>https://micahjstudio.com/tags/drafting/</loc>
+    <lastmod>2025-12-08T13:49:17-05:00</lastmod>
+  </url><url>
+    <loc>https://micahjstudio.com/posts/slants/</loc>
+    <lastmod>2025-12-08T13:49:17-05:00</lastmod>
+  </url><url>
+    <loc>https://micahjstudio.com/posts/technical_drawings/</loc>
+    <lastmod>2025-11-28T13:49:17-05:00</lastmod>
+  </url><url>
+    <loc>https://micahjstudio.com/posts/stud2/</loc>
+    <lastmod>2025-09-28T13:49:17-04:55</lastmod>
+  </url><url>
+    <loc>https://micahjstudio.com/posts/stud1/</loc>
     <lastmod>2025-09-27T13:49:17-04:55</lastmod>
   </url>
 </urlset>

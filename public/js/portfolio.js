@@ -1,8 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('Portfolio JS loaded');
   const portfolioImages = document.querySelectorAll('.portfolio-item img');
+  console.log('Found images:', portfolioImages.length);
   
-  portfolioImages.forEach(img => {
+  // Only run if we actually have portfolio images
+  if (portfolioImages.length === 0) {
+    console.log('No portfolio images found, skipping setup');
+    return;
+  }
+  
+  portfolioImages.forEach((img, index) => {
+    console.log('Setting up image', index, img.src);
     img.addEventListener('click', function(e) {
+      console.log('Image clicked:', this.src);
       e.preventDefault();
       e.stopPropagation();
       
@@ -45,7 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         e.stopPropagation();
         document.body.style.overflow = '';
-        document.body.removeChild(overlay);
+        if (document.body.contains(overlay)) {
+          document.body.removeChild(overlay);
+        }
       };
       
       overlay.addEventListener('click', closeOverlay);
