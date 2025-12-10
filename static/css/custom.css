@@ -1,6 +1,11 @@
 /* IMPORTANT: This CSS must load AFTER the theme CSS */
 
-/* Fix container width issue on mobile - this is the main problem */
+/* Hide all page titles */
+.singleTitle {
+  display: none !important;
+}
+
+/* Fix container width issue on mobile */
 @media (max-width: 768px) {
   .container, body {
     width: 100% !important;
@@ -26,7 +31,7 @@ a:hover {
   color: var(--primary-color) !important;
 }
 
-/* Specifically target navigation links */
+/* Navigation links */
 .main-header nav li a {
   color: var(--text-color) !important;
 }
@@ -76,20 +81,4 @@ a:hover {
 .main-image img {
   max-width: 100% !important;
   height: auto !important;
-}
-
-/* Hide all page titles */
-.singleTitle {
-  display: none !important;
-}
-
-html body .singleTitle {
-  display: none !important;
-}
-
-/* Also hide h1 first-child elements that might be titles */
-html body main h1:first-child,
-html body article h1:first-child,
-html body .content h1:first-child {
-  display: none !important;
 }
