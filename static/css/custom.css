@@ -78,32 +78,37 @@ a:hover {
   height: auto !important;
 }
 
-/* Desktop - reduce excessive spacing */
+/* Force proper title positioning - highest specificity */
+html body .singleTitle,
+body .singleTitle,
 .singleTitle {
-  margin-top: 90px !important;
-  padding-top: 20px !important;
+  margin-top: 100px !important;
+  padding-top: 10px !important;
 }
 
-html body .singleTitle {
-  margin-top: 90px !important;
-  padding-top: 20px !important;
-}
-
-/* Mobile - proper spacing under header */
+/* Mobile override */
 @media (max-width: 768px) {
+  html body .singleTitle,
+  body .singleTitle,
   .singleTitle {
-    margin-top: 60px !important;
-    padding-top: 15px !important;
+    margin-top: 70px !important;
+    padding-top: 10px !important;
   }
-  
-  html body .singleTitle {
-    margin-top: 60px !important;
-    padding-top: 15px !important;
-  }
-  
-  /* Also fix other headings on mobile */
-  html body h1, html body h2, html body h3 {
-    margin-top: 20px !important;
+}
+
+/* Also fix any other page headings */
+html body h1:first-child,
+body h1:first-child,
+h1:first-child {
+  margin-top: 100px !important;
+  padding-top: 10px !important;
+}
+
+@media (max-width: 768px) {
+  html body h1:first-child,
+  body h1:first-child,
+  h1:first-child {
+    margin-top: 70px !important;
     padding-top: 10px !important;
   }
 }
