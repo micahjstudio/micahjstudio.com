@@ -3,7 +3,7 @@ title: "micahjstudio"
 featured_image: "images/compositions.jpeg"
 ---
 <div class="portfolio">
- <div class="index-title">---------------------------------------------------------------------------</div>
+ <div class="index-title"></div>
  <div class="portfolio-grid">
  <div class="portfolio-item">
  <img src="images/ipad1.jpeg" alt="Portfolio Item 1" />
