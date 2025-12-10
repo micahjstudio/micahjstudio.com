@@ -78,43 +78,7 @@ a:hover {
   height: auto !important;
 }
 
-/* Force proper title positioning - highest specificity */
-html body .singleTitle,
-body .singleTitle,
-.singleTitle {
-  margin-top: 100px !important;
-  padding-top: 10px !important;
-}
-
-/* Mobile override */
-@media (max-width: 768px) {
-  html body .singleTitle,
-  body .singleTitle,
-  .singleTitle {
-    margin-top: 70px !important;
-    padding-top: 10px !important;
-  }
-}
-
-/* Also fix any other page headings */
-html body h1:first-child,
-body h1:first-child,
-h1:first-child {
-  margin-top: 100px !important;
-  padding-top: 10px !important;
-}
-
-@media (max-width: 768px) {
-  html body h1:first-child,
-  body h1:first-child,
-  h1:first-child {
-    margin-top: 70px !important;
-    padding-top: 10px !important;
-  }
-}
-
-/* FINAL OVERRIDE - Add at the very end of the file */
-/* Force title positioning with maximum specificity */
+/* FINAL TITLE POSITIONING - Only keep these rules */
 html body main .singleTitle,
 html body article .singleTitle,
 html body .content .singleTitle,
@@ -123,6 +87,8 @@ body .singleTitle,
 .singleTitle {
   margin-top: 150px !important;
   padding-top: 15px !important;
+  background-color: transparent !important;
+  color: var(--text-color) !important;
 }
 
 /* Mobile title positioning */
