@@ -290,6 +290,17 @@ html body .homepage-breadcrumb {
 }
 
  
+.breadcrumb, .homepage-breadcrumb {
+  margin-top: 60px !important;
+  margin-bottom: 20px !important;
+}
+
+ 
+body {
+  padding-top: 80px !important;
+}
+
+ 
 html body[data-theme="light"] h1,
 html body[data-theme="light"] h2, 
 html body[data-theme="light"] h3,
@@ -309,20 +320,30 @@ html body[data-theme="dark"] h6 {
 }
 
  
-.main-header {
+body {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
   width: 100% !important;
-  max-width: 1000px !important;
+}
+
+ 
+.main-header {
+  max-width: 1200px !important;
   margin: 0 auto !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  position: fixed !important;
-  top: 0 !important;
-  z-index: 1000 !important;
 }
 
-.main-header nav {
-  justify-content: center !important;
-  width: 100% !important;
+ 
+.breadcrumb, .posts-list, .content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 </style>
 
