@@ -145,6 +145,7 @@ body .flipbook-container {
   gap: 20px;
   font-family: var(--title-font-family);
   font-size: 0.9rem;
+  margin-top: -70px;
 }
 
 .flipbook-controls button {
