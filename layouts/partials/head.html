@@ -330,6 +330,21 @@ body {
   max-width: 1200px !important;
   margin: 0 auto !important;
 }
+
+/* Fix PDF viewer positioning under fixed navigation */
+.pdf-container {
+  margin-top: 60px !important;
+  padding-top: 0 !important;
+}
+
+.pdf-toolbar {
+  margin-top: 0 !important;
+}
+
+/* Ensure all main content is below fixed header */
+main, .content {
+  padding-top: 60px !important;
+}
 </style>
 <!-- Temporarily disable portfolio script -->
 <!-- <script defer src="/js/portfolio.js"></script> -->

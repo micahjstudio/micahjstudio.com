@@ -149,21 +149,21 @@ body .flipbook-container {
 
 .flipbook-controls button {
   padding: 10px 20px;
-  background: var(--primary-color);
+  background: #8B4513;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   font-family: var(--title-font-family);
   transition: background 0.3s;
 }
 
 .flipbook-controls button:hover {
-  background: #d63ae6;
+  background: #A0522D;
 }
 
 .flipbook-controls button:disabled {
-  background: var(--mgray-color);
+  background: #D2B48C !iCpo!tint;
   cursor: not-allowed;
 }
 
