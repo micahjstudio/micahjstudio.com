@@ -292,6 +292,23 @@ html body[data-theme="dark"] h5,
 html body[data-theme="dark"] h6 {
   color: #FFFFFF !important;
 }
+
+/* Force navigation centering */
+.main-header {
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+.main-header nav {
+  justify-content: center !important;
+  width: 100% !important;
+}
 </style>
 <!-- Temporarily disable portfolio script -->
 <!-- <script defer src="/js/portfolio.js"></script> -->

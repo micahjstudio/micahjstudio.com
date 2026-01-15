@@ -307,40 +307,6 @@ html body[data-theme="dark"] h6 {
   color: #FFFFFF !important;
 }
 </style>
-<script>
-
-window.addEventListener('load', function() {
-  console.log('Theme script loaded');
-  const themeToggle = document.getElementById('theme-toggle');
-  console.log('Theme toggle element:', themeToggle);
-  
-  if (!themeToggle) {
-    console.error('Theme toggle button not found!');
-    return;
-  }
-  
-  let currentTheme = localStorage.getItem('theme') || 'light';
-  console.log('Current theme:', currentTheme);
-
-  document.body.setAttribute('data-theme', currentTheme);
-  themeToggle.textContent = currentTheme === 'dark' ? '/tolight' : '/todark';
-
-  function toggleTheme() {
-    console.log('Toggle theme clicked');
-    const currentTheme = document.body.getAttribute('data-theme');
-    console.log('Current theme from body:', currentTheme);
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    console.log('New theme:', newTheme);
-
-    document.body.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
-  }
-
-  themeToggle.addEventListener('click', toggleTheme);
-  console.log('Event listener added');
-});
-</script>
 
 
 
