@@ -342,8 +342,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Hover effects
     leftArrow.addEventListener('mouseenter', () => {
-      leftArrow.style.background = 'rgba(255,255,255,0.9)';
-      leftArrow.style.color = 'black';
+      leftArrow.style.background = 'rgba(255,255,255,0.2)';
+      leftArrow.style.color = 'white';
     });
     leftArrow.addEventListener('mouseleave', () => {
       leftArrow.style.background = 'rgba(0,0,0,0.3)';
@@ -351,8 +351,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     rightArrow.addEventListener('mouseenter', () => {
-      rightArrow.style.background = 'rgba(255,255,255,0.9)';
-      rightArrow.style.color = 'black';
+      rightArrow.style.background = 'rgba(255,255,255,0.2)';
+      rightArrow.style.color = 'white';
     });
     rightArrow.addEventListener('mouseleave', () => {
       rightArrow.style.background = 'rgba(0,0,0,0.3)';
