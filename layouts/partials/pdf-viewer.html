@@ -1,0 +1,101 @@
+<!-- Custom PDF Viewer -->
+<div class="pdf-container">
+  <div class="pdf-mobile-notice">
+    <p><strong>On mobile?</strong> <a href="{{ .pdfUrl }}" target="_blank">Open PDF in new tab</a> for better viewing.</p>
+  </div>
+  
+  <div class="pdf-toolbar">
+    <div class="pdf-controls-left">
+      <span id="page-info-{{ .id }}">Loading...</span>
+    </div>
+    <div class="pdf-controls-right">
+      <a href="{{ .pdfUrl }}" download="{{ .filename }}" class="pdf-btn download-btn">↓ Download</a>
+      <button id="fullscreen-btn-{{ .id }}" class="pdf-btn">⛶</button>
+    </div>
+  </div>
+  
+  <div class="pdf-viewer" id="pdf-viewer-{{ .id }}">
+    <!-- Pages will be dynamically added here -->
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // PDF.js setup
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+  let pdfDoc = null;
+  let scale = 0.8;
+  let currentPage = 1;
+  const viewer = document.getElementById('pdf-viewer-{{ .id }}');
+
+  // Load PDF
+  pdfjsLib.getDocument('{{ .pdfUrl }}').promise.then(function(pdfDoc_) {
+    pdfDoc = pdfDoc_;
+    document.getElementById('page-info-{{ .id }}').textContent = `Page 1 of ${pdfDoc.numPages}`;
+    renderAllPages();
+  });
+
+  function renderAllPages() {
+    viewer.innerHTML = '';
+    
+    for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+      const pageContainer = document.createElement('div');
+      pageContainer.className = 'pdf-page';
+      pageContainer.id = `page-${pageNum}-{{ .id }}`;
+      
+      const canvas = document.createElement('canvas');
+      canvas.className = 'pdf-canvas';
+      pageContainer.appendChild(canvas);
+      viewer.appendChild(pageContainer);
+      
+      renderPage(pageNum, canvas);
+    }
+  }
+
+  function renderPage(pageNum, canvas) {
+    pdfDoc.getPage(pageNum).then(function(page) {
+      const viewport = page.getViewport({scale: scale});
+      const ctx = canvas.getContext('2d');
+      
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      const renderContext = {
+        canvasContext: ctx,
+        viewport: viewport
+      };
+      
+      page.render(renderContext);
+    });
+  }
+
+  // Update current page indicator on scroll
+  viewer.addEventListener('scroll', function() {
+    const pages = document.querySelectorAll(`#pdf-viewer-{{ .id }} .pdf-page`);
+    const viewerRect = viewer.getBoundingClientRect();
+    const viewerCenter = viewerRect.top + viewerRect.height / 2;
+    
+    pages.forEach((page, index) => {
+      const pageRect = page.getBoundingClientRect();
+      if (pageRect.top <= viewerCenter && pageRect.bottom >= viewerCenter) {
+        currentPage = index + 1;
+        document.getElementById('page-info-{{ .id }}').textContent = `Page ${currentPage} of ${pdfDoc.numPages}`;
+      }
+    });
+  });
+
+  // Fullscreen functionality
+  document.getElementById('fullscreen-btn-{{ .id }}').addEventListener('click', function() {
+    const container = viewer.closest('.pdf-container');
+    if (container.requestFullscreen) {
+      container.requestFullscreen();
+    } else if (container.webkitRequestFullscreen) {
+      container.webkitRequestFullscreen();
+    } else if (container.msRequestFullscreen) {
+      container.msRequestFullscreen();
+    }
+  });
+});
+</script>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.150.1">
+	<meta name="generator" content="Hugo 0.150.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
@@ -18,7 +18,7 @@
 <title>micahjstudio</title>
 
 
-  <link rel="stylesheet" href="https://micahjstudio.com/css/main.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/main.css">
 
 <style>
  
@@ -308,6 +308,40 @@ html body[data-theme="dark"] h6 {
   color: #FFFFFF !important;
 }
 </style>
+<script>
+
+window.addEventListener('load', function() {
+  console.log('Theme script loaded');
+  const themeToggle = document.getElementById('theme-toggle');
+  console.log('Theme toggle element:', themeToggle);
+  
+  if (!themeToggle) {
+    console.error('Theme toggle button not found!');
+    return;
+  }
+  
+  let currentTheme = localStorage.getItem('theme') || 'light';
+  console.log('Current theme:', currentTheme);
+
+  document.body.setAttribute('data-theme', currentTheme);
+  themeToggle.textContent = currentTheme === 'dark' ? '/tolight' : '/todark';
+
+  function toggleTheme() {
+    console.log('Toggle theme clicked');
+    const currentTheme = document.body.getAttribute('data-theme');
+    console.log('Current theme from body:', currentTheme);
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    console.log('New theme:', newTheme);
+
+    document.body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
+  }
+
+  themeToggle.addEventListener('click', toggleTheme);
+  console.log('Event listener added');
+});
+</script>
 
 
 
@@ -315,9 +349,9 @@ html body[data-theme="dark"] h6 {
 <body>
     <header class="main-header">
 	<nav>
-	  <li><a href="https://micahjstudio.com/">/home</a></li>
-	  <li><a href="https://micahjstudio.com/tags/">/tags</a></li>
-	  <li><a href="https://micahjstudio.com/about/">/about</a></li>
+	  <li><a href="http://localhost:1313/">/home</a></li>
+	  <li><a href="http://localhost:1313/tags/">/tags</a></li>
+	  <li><a href="http://localhost:1313/about/">/about</a></li>
 	  <li id="theme-toggle" style="cursor: pointer;">/todark</li>
 	</nav>
   </header>
@@ -356,236 +390,445 @@ html body[data-theme="dark"] h6 {
     
   <div class="breadcrumb homepage-breadcrumb">🏠 /home<hr></div>
 
-  <div class="portfolio">
-    <div class="index-title"></div>
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/ipad1.jpeg" alt="Portfolio Item 1" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/model5.jpeg" alt="Portfolio Item 2" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/model6.jpeg" alt="Portfolio Item 3" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/ipad3.jpeg" alt="Portfolio Item 4" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/3d1.png" alt="Portfolio Item 5" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/model7.jpeg" alt="Portfolio Item 6" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/ipad2.jpeg" alt="Portfolio Item 7" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/model2.jpeg" alt="Portfolio Item 8" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/3d2.png" alt="Portfolio Item 9" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/3d3.png" alt="Portfolio Item 10" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/ipad5.jpeg" alt="Portfolio Item 11" />
-      </div>
-      <div class="portfolio-item">
-        <img src="https://micahjstudio.com/images/model1.jpeg" alt="Portfolio Item 12" />
-      </div>
+  <style>
+/* Override theme's body width for homepage */
+body {
+  width: 100% !important;
+  max-width: 1000px !important;
+}
+
+.container {
+  width: 100% !important;
+  max-width: 1000px !important;
+}
+
+body .flipbook-container {
+  max-width: 800px !important;
+  width: 100% !important;
+  margin: 20px auto !important;
+  text-align: center !important;
+}
+</style>
+<div class="flipbook-container">
+  <div class="flipbook">
+    <div class="page" data-page="1">
+      <img src="images/ipad1.jpeg" alt="Page 1" />
+    </div>
+    <div class="page" data-page="2">
+      <img src="images/model5.jpeg" alt="Page 2" />
+    </div>
+    <div class="page" data-page="3">
+      <img src="images/model6.jpeg" alt="Page 3" />
+    </div>
+    <div class="page" data-page="4">
+      <img src="images/buddha1.jpg" alt="Page 4" />
+    </div>
+    <div class="page" data-page="5">
+      <img src="images/3d1.png" alt="Page 5" />
+    </div>
+    <div class="page" data-page="6">
+      <img src="images/model7.jpeg" alt="Page 6" />
+    </div>
+    <div class="page" data-page="7">
+      <img src="images/buddha2.jpg" alt="Page 7" />
+    </div>
+    <div class="page" data-page="8">
+      <img src="images/model2.jpeg" alt="Page 8" />
+    </div>
+    <div class="page" data-page="9">
+      <img src="images/buddha3.jpg" alt="Page 9" />
+    </div>
+    <div class="page" data-page="10">
+      <img src="images/worm.jpeg" alt="Page 10" />
+    </div>
+    <div class="page" data-page="11">
+      <img src="images/ipad5.jpeg" alt="Page 11" />
+    </div>
+    <div class="page" data-page="12">
+      <img src="images/model1.jpeg" alt="Page 12" />
     </div>
   </div>
+  <div class="flipbook-controls">
+    <button id="prev-page">← Previous</button>
+    <span id="page-counter">1 / 12</span>
+    <button id="next-page">Next →</button>
+  </div>
+</div>
+<style>
+.flipbook-container {
+  max-width: 800px !important;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.flipbook {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 20px;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  position: absolute;
+  width: 50%;
+  height: 75%;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Current page - center */
+.page.current {
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+/* Previous page - left side, spread out more */
+.page.prev {
+  z-index: 5;
+  left: 5%;
+  transform: translateX(0) scale(0.75);
+  opacity: 0.7;
+}
+
+/* Next page - right side, spread out more */
+.page.next {
+  z-index: 5;
+  right: 5%;
+  transform: translateX(0) scale(0.75);
+  opacity: 0.7;
+}
+
+/* Hidden pages */
+.page.hidden {
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%) scale(0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.flipbook-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--title-font-family);
+  font-size: 0.9rem;
+}
+
+.flipbook-controls button {
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--title-font-family);
+  transition: background 0.3s;
+}
+
+.flipbook-controls button:hover {
+  background: #d63ae6;
+}
+
+.flipbook-controls button:disabled {
+  background: var(--mgray-color);
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .flipbook-container {
+    max-width: 600px;
+  }
+  
+  .flipbook {
+    height: 400px;
+  }
+  
+  .flipbook-controls {
+    font-size: 0.8rem;
+  }
+  
+  .flipbook-controls button {
+    padding: 8px 16px;
+  }
+  
+  .page {
+    width: 65%;
+    height: 80%;
+  }
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const pages = document.querySelectorAll('.page');
+  const prevBtn = document.getElementById('prev-page');
+  const nextBtn = document.getElementById('next-page');
+  const counter = document.getElementById('page-counter');
+  
+  let currentPage = 0;
+  
+  function updateDisplay() {
+    pages.forEach((page, index) => {
+      page.classList.remove('current', 'prev', 'next', 'hidden');
+      
+      if (index === currentPage) {
+        page.classList.add('current');
+      } else if (index === currentPage - 1) {
+        page.classList.add('prev');
+      } else if (index === currentPage + 1) {
+        page.classList.add('next');
+      } else {
+        page.classList.add('hidden');
+      }
+    });
+    
+    counter.textContent = `${currentPage + 1} / ${pages.length}`;
+    prevBtn.disabled = currentPage === 0;
+    nextBtn.disabled = currentPage === pages.length - 1;
+  }
+  
+  nextBtn.addEventListener('click', () => {
+    if (currentPage < pages.length - 1) {
+      currentPage++;
+      updateDisplay();
+    }
+  });
+  
+  prevBtn.addEventListener('click', () => {
+    if (currentPage > 0) {
+      currentPage--;
+      updateDisplay();
+    }
+  });
+  
+  // Click handlers for navigation
+  pages.forEach((page, index) => {
+    page.addEventListener('click', () => {
+      if (index === currentPage - 1) {
+        currentPage--;
+        updateDisplay();
+      } else if (index === currentPage + 1) {
+        currentPage++;
+        updateDisplay();
+      } else if (index === currentPage) {
+        // Click current image for fullscreen
+        const img = page.querySelector('img');
+        openFullscreen(img.src);
+      }
+    });
+  });
+  
+  // Fullscreen function
+  function openFullscreen(imageSrc) {
+    const overlay = document.createElement('div');
+    overlay.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.95);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    `;
+    
+    const img = document.createElement('img');
+    img.src = imageSrc;
+    img.style.cssText = `
+      max-width: 95vw;
+      max-height: 95vh;
+      object-fit: contain;
+      border-radius: 0px;
+      box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    `;
+    
+    // Left arrow button
+    const leftArrow = document.createElement('button');
+    leftArrow.innerHTML = '←';
+    leftArrow.style.cssText = `
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.8);
+      color: white;
+      border: 2px solid rgba(255,255,255,0.8);
+      font-size: 2rem;
+      padding: 15px 20px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: all 0.3s;
+    `;
+    
+    // Right arrow button
+    const rightArrow = document.createElement('button');
+    rightArrow.innerHTML = '→';
+    rightArrow.style.cssText = `
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.8);
+      color: white;
+      border: 2px solid rgba(255,255,255,0.8);
+      font-size: 2rem;
+      padding: 15px 20px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: all 0.3s;
+    `;
+    
+    // Update arrow visibility
+    function updateArrows() {
+      leftArrow.style.display = currentPage > 0 ? 'block' : 'none';
+      rightArrow.style.display = currentPage < pages.length - 1 ? 'block' : 'none';
+    }
+    
+    // Arrow click handlers
+    leftArrow.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (currentPage > 0) {
+        currentPage--;
+        updateDisplay();
+        img.src = pages[currentPage].querySelector('img').src;
+        updateArrows();
+      }
+    });
+    
+    rightArrow.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (currentPage < pages.length - 1) {
+        currentPage++;
+        updateDisplay();
+        img.src = pages[currentPage].querySelector('img').src;
+        updateArrows();
+      }
+    });
+    
+    // Hover effects
+    leftArrow.addEventListener('mouseenter', () => {
+      leftArrow.style.background = 'rgba(255,255,255,0.9)';
+      leftArrow.style.color = 'black';
+    });
+    leftArrow.addEventListener('mouseleave', () => {
+      leftArrow.style.background = 'rgba(0,0,0,0.8)';
+      leftArrow.style.color = 'white';
+    });
+    
+    rightArrow.addEventListener('mouseenter', () => {
+      rightArrow.style.background = 'rgba(255,255,255,0.9)';
+      rightArrow.style.color = 'black';
+    });
+    rightArrow.addEventListener('mouseleave', () => {
+      rightArrow.style.background = 'rgba(0,0,0,0.8)';
+      rightArrow.style.color = 'white';
+    });
+    
+    overlay.appendChild(img);
+    overlay.appendChild(leftArrow);
+    overlay.appendChild(rightArrow);
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+    
+    updateArrows();
+    
+    // Close on overlay click (but not on arrows or image)
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        closeFullscreen();
+      }
+    });
+    
+    // Close function
+    const closeFullscreen = () => {
+      document.body.style.overflow = '';
+      document.body.removeChild(overlay);
+      document.removeEventListener('keydown', handleKeydown);
+    };
+    
+    // Keyboard navigation
+    const handleKeydown = function(e) {
+      if (e.key === 'Escape') {
+        closeFullscreen();
+      } else if (e.key === 'ArrowRight' && currentPage < pages.length - 1) {
+        currentPage++;
+        updateDisplay();
+        img.src = pages[currentPage].querySelector('img').src;
+        updateArrows();
+      } else if (e.key === 'ArrowLeft' && currentPage > 0) {
+        currentPage--;
+        updateDisplay();
+        img.src = pages[currentPage].querySelector('img').src;
+        updateArrows();
+      }
+    };
+    document.addEventListener('keydown', handleKeydown);
+  }
+  
+  updateDisplay();
+});
+</script>
+
 
   <div class="posts-list">
     
       <div class="post-title">
-        <a href="https://micahjstudio.com/about/">- about</a>
+        <a href="http://localhost:1313/about/">- about</a>
         <small>2025.12.09</small>
       </div>
     
       <div class="post-title">
-        <a href="https://micahjstudio.com/posts/resume/">- resume</a>
+        <a href="http://localhost:1313/posts/resume/">- resume</a>
         <small>2025.12.09</small>
       </div>
     
       <div class="post-title">
-        <a href="https://micahjstudio.com/posts/stud3/">- studio 3 portfolio</a>
-        <small>2025.12.09</small>
-      </div>
-    
-      <div class="post-title">
-        <a href="https://micahjstudio.com/posts/slants/">- slants coffee const docs</a>
+        <a href="http://localhost:1313/posts/slants/">- slants coffee const docs</a>
         <small>2025.12.08</small>
       </div>
     
       <div class="post-title">
-        <a href="https://micahjstudio.com/posts/technical_drawings/">- cad drawings</a>
+        <a href="http://localhost:1313/posts/technical_drawings/">- cad drawings</a>
         <small>2025.11.28</small>
       </div>
     
       <div class="post-title">
-        <a href="https://micahjstudio.com/posts/stud2/">- studio 2 portfolio</a>
+        <a href="http://localhost:1313/posts/stud3/">- studio 3 portfolio</a>
+        <small>2025.09.29</small>
+      </div>
+    
+      <div class="post-title">
+        <a href="http://localhost:1313/posts/stud2/">- studio 2 portfolio</a>
         <small>2025.09.28</small>
       </div>
     
       <div class="post-title">
-        <a href="https://micahjstudio.com/posts/stud1/">- studio 1 portfolio</a>
+        <a href="http://localhost:1313/posts/stud1/">- studio 1 portfolio</a>
         <small>2025.09.27</small>
       </div>
     
   </div>
 
-  <script src="https://micahjstudio.com/js/portfolio.js"></script>
-
-  <style>
-   
-  
-   
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
-  
-   
-  html, body, * {
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif !important;
-  }
-  
-  .main-header, .main-header *, .post-title, .post-title *, .breadcrumb, .index-title {
-    font-family: 'Fira Code', 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', 'Source Code Pro', monospace !important;
-  }
-  
-   
-  html body .main-header nav,
-  .main-header nav,
-  header.main-header nav {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  html body .main-header nav li,
-  .main-header nav li,
-  header.main-header nav li {
-    display: inline-block !important;
-    margin-right: 14px !important;
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
-    float: none !important;
-    clear: none !important;
-    width: auto !important;
-    height: auto !important;
-  }
-  
-   
-  a {
-    color: #181818 !important;  
-    text-decoration: none !important;
-  }
-  
-  a:hover {
-    color: #ec42ff !important;  
-  }
-  
-  .main-header nav li a {
-    color: #181818 !important;
-    font-family: 'Fira Code', monospace !important;
-  }
-  
-  .main-header nav li a:hover {
-    color: #ec42ff !important;
-  }
-  
-  .post-title a {
-    color: #181818 !important;
-    font-family: 'Fira Code', monospace !important;
-  }
-  
-  .post-title a:hover {
-    color: #ec42ff !important;
-  }
-  
-   
-  @media (max-width: 768px) {
-    .container, body {
-      width: 100% !important;
-      min-width: unset !important;
-      padding: 0 20px !important;
-    }
-    
-    .main-header {
-      width: 100% !important;
-      left: 0 !important;
-      transform: none !important;
-      padding: 12px 20px !important;
-    }
-    
-     
-    html body .main-header nav,
-    .main-header nav {
-      display: flex !important;
-      flex-direction: row !important;
-      flex-wrap: nowrap !important;
-    }
-    
-    html body .main-header nav li,
-    .main-header nav li {
-      margin-right: 15px !important;
-      display: inline-block !important;
-      width: auto !important;
-    }
-    
-    .portfolio-grid {
-      grid-template-columns: repeat(2, 1fr) !important;
-      gap: 12px !important;
-    }
-    
-    .portfolio-item img {
-      height: 150px !important;
-    }
-    
-     
-    html, body, * {
-      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
-    }
-    
-    .main-header, .post-title, .breadcrumb, .index-title {
-      font-family: 'Fira Code', 'SF Mono', Monaco, monospace !important;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .portfolio-grid {
-      grid-template-columns: 1fr !important;
-    }
-    
-    .index-title {
-      font-size: 0.7rem !important;
-      word-break: break-all !important;
-    }
-  }
-  
-   
-  @media (max-width: 768px) {
-    object[type="application/pdf"] {
-      width: 100% !important;
-      height: 400px !important;
-      min-height: 400px !important;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    object[type="application/pdf"] {
-      height: 300px !important;
-      min-height: 300px !important;
-    }
-  }
-  </style>
+  <script src="http://localhost:1313/js/portfolio.js"></script>
 
     
 <footer id="footer">
