@@ -285,9 +285,9 @@ document.addEventListener('DOMContentLoaded', function() {
       left: 30px;
       top: 50%;
       transform: translateY(-50%);
-      background: rgba(0,0,0,0.8);
+      background: rgba(0,0,0,0.3);
       color: white;
-      border: 2px solid rgba(255,255,255,0.8);
+      border: 2px solid rgba(255,255,255,0.3);
       font-size: 2rem;
       padding: 15px 20px;
       cursor: pointer;
@@ -303,9 +303,9 @@ document.addEventListener('DOMContentLoaded', function() {
       right: 30px;
       top: 50%;
       transform: translateY(-50%);
-      background: rgba(0,0,0,0.8);
+      background: rgba(0,0,0,0.3);
       color: white;
-      border: 2px solid rgba(255,255,255,0.8);
+      border: 2px solid rgba(255,255,255,0.3);
       font-size: 2rem;
       padding: 15px 20px;
       cursor: pointer;
