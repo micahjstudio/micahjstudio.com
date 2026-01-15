@@ -345,6 +345,17 @@ body {
 main, .content {
   padding-top: 60px !important;
 }
+
+/* Fix tag page content positioning */
+.list, .page-links {
+  margin-top: 21px !important;
+  padding-top: 0px !important;
+}
+
+/* Ensure all page content starts below fixed header */
+.breadcrumb + .list {
+  margin-top: 10px !important;
+}
 </style>
 <!-- Temporarily disable portfolio script -->
 <!-- <script defer src="/js/portfolio.js"></script> -->

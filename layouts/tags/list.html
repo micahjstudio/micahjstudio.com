@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="breadcrumb">
+  🏷 /tags/{{ .Title | lower }}
+  <hr>
+</div>
+
+<div class="list">
+  <div class="page-links">
+    {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="page-link"> # {{ .Title }}</a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
