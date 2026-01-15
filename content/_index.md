@@ -346,17 +346,30 @@ document.addEventListener('DOMContentLoaded', function() {
       leftArrow.style.color = 'black';
     });
     leftArrow.addEventListener('mouseleave', () => {
-      leftArrow.style.background = 'rgba(0,0,0,0.8)';
+      leftArrow.style.background = 'rgba(0,0,0,0.3)';
       leftArrow.style.color = 'white';
     });
-    
+
     rightArrow.addEventListener('mouseenter', () => {
       rightArrow.style.background = 'rgba(255,255,255,0.9)';
       rightArrow.style.color = 'black';
     });
     rightArrow.addEventListener('mouseleave', () => {
-      rightArrow.style.background = 'rgba(0,0,0,0.8)';
+      rightArrow.style.background = 'rgba(0,0,0,0.3)';
       rightArrow.style.color = 'white';
+    });
+
+    // Remove focus after click to prevent highlight
+    leftArrow.addEventListener('click', (e) => {
+      e.stopPropagation();
+      leftArrow.blur();
+      // ... rest of click handler
+    });
+
+    rightArrow.addEventListener('click', (e) => {
+      e.stopPropagation();
+      rightArrow.blur();
+      // ... rest of click handler
     });
     
     overlay.appendChild(img);
