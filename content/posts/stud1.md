@@ -231,3 +231,113 @@ document.getElementById('fullscreen-btn').addEventListener('click', function() {
   setTimeout(() => renderAllPages(), 100);
 });
 </script>
+
+<!-- Second PDF Viewer -->
+<div class="pdf-container" id="pdf-container-2">
+  <div class="pdf-mobile-notice">
+    <p><strong>On mobile?</strong> <a href="/pdfs/graph1.pdf" target="_blank">Open PDF in new tab</a> for better viewing.</p>
+  </div>
+  
+  <div class="pdf-toolbar">
+    <div class="pdf-controls-left">
+      <span id="page-info-2">Loading...</span>
+    </div>
+    <div class="pdf-controls-right">
+      <a href="/pdfs/graph1.pdf" download="second-pdf.pdf" class="pdf-btn download-btn">↓ Download</a>
+      <button id="fullscreen-btn-2" class="pdf-btn">⛶</button>
+    </div>
+  </div>
+  
+  <div class="pdf-viewer" id="pdf-viewer-2">
+    <!-- Pages will be dynamically added here -->
+  </div>
+</div>
+
+<script>
+// Second PDF setup
+let pdfDoc2 = null;
+let scale2 = 0.8;
+let currentPage2 = 1;
+const viewer2 = document.getElementById('pdf-viewer-2');
+
+// Load second PDF
+pdfjsLib.getDocument('/pdfs/second-pdf.pdf').promise.then(function(pdfDoc_) {
+  pdfDoc2 = pdfDoc_;
+  document.getElementById('page-info-2').textContent = `Page 1 of ${pdfDoc2.numPages}`;
+  renderAllPages2();
+});
+
+function renderAllPages2() {
+  viewer2.innerHTML = '';
+  
+  for (let pageNum = 1; pageNum <= pdfDoc2.numPages; pageNum++) {
+    const pageContainer = document.createElement('div');
+    pageContainer.className = 'pdf-page';
+    pageContainer.id = `page2-${pageNum}`;
+    
+    const canvas = document.createElement('canvas');
+    canvas.className = 'pdf-canvas';
+    pageContainer.appendChild(canvas);
+    viewer2.appendChild(pageContainer);
+    
+    renderPage2(pageNum, canvas);
+  }
+}
+
+function renderPage2(pageNum, canvas) {
+  pdfDoc2.getPage(pageNum).then(function(page) {
+    const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement;
+    const currentScale = isFullscreen ? 1.2 : scale2;
+    const viewport = page.getViewport({scale: currentScale});
+    const ctx = canvas.getContext('2d');
+    
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    const renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    
+    page.render(renderContext);
+  });
+}
+
+// Update current page indicator on scroll for second PDF
+viewer2.addEventListener('scroll', function() {
+  const pages = document.querySelectorAll('#pdf-viewer-2 .pdf-page');
+  const viewerRect = viewer2.getBoundingClientRect();
+  const viewerCenter = viewerRect.top + viewerRect.height / 2;
+  
+  pages.forEach((page, index) => {
+    const pageRect = page.getBoundingClientRect();
+    if (pageRect.top <= viewerCenter && pageRect.bottom >= viewerCenter) {
+      currentPage2 = index + 1;
+      document.getElementById('page-info-2').textContent = `Page ${currentPage2} of ${pdfDoc2.numPages}`;
+    }
+  });
+});
+
+// Fullscreen functionality for second PDF
+document.getElementById('fullscreen-btn-2').addEventListener('click', function() {
+  const container = document.getElementById('pdf-container-2');
+  
+  if (document.fullscreenElement || document.webkitFullscreenElement) {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+  } else {
+    if (container.requestFullscreen) {
+      container.requestFullscreen();
+    } else if (container.webkitRequestFullscreen) {
+      container.webkitRequestFullscreen();
+    } else if (container.msRequestFullscreen) {
+      container.msRequestFullscreen();
+    }
+  }
+  
+  setTimeout(() => renderAllPages2(), 100);
+});
+</script>
