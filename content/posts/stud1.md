@@ -243,7 +243,7 @@ document.getElementById('fullscreen-btn').addEventListener('click', function() {
       <span id="page-info-2">Loading...</span>
     </div>
     <div class="pdf-controls-right">
-      <a href="/pdfs/graph1.pdf" download="second-pdf.pdf" class="pdf-btn download-btn">↓ Download</a>
+      <a href="/pdfs/graph1.pdf" download="graph1.pdf" class="pdf-btn download-btn">↓ Download</a>
       <button id="fullscreen-btn-2" class="pdf-btn">⛶</button>
     </div>
   </div>
@@ -261,7 +261,7 @@ let currentPage2 = 1;
 const viewer2 = document.getElementById('pdf-viewer-2');
 
 // Load second PDF
-pdfjsLib.getDocument('/pdfs/second-pdf.pdf').promise.then(function(pdfDoc_) {
+pdfjsLib.getDocument('/pdfs/graph1.pdf').promise.then(function(pdfDoc_) {
   pdfDoc2 = pdfDoc_;
   document.getElementById('page-info-2').textContent = `Page 1 of ${pdfDoc2.numPages}`;
   renderAllPages2();
