@@ -26,40 +26,49 @@ body .flipbook-container {
 <div class="flipbook-container">
   <div class="flipbook">
     <div class="page" data-page="1">
-      <img src="images/ipad1.jpeg" alt="Page 1" />
+      <img src="images/TRANSFER1.jpg" alt="Page 1" />
     </div>
     <div class="page" data-page="2">
-      <img src="images/model5.jpeg" alt="Page 2" />
+      <img src="images/TRANSFER2.jpg" alt="Page 2" />
     </div>
     <div class="page" data-page="3">
-      <img src="images/model6.jpeg" alt="Page 3" />
+      <img src="images/TRANSFER3.jpg" alt="Page 3" />
     </div>
     <div class="page" data-page="4">
-      <img src="images/buddha1.jpg" alt="Page 4" />
+      <img src="images/TRANSFER4.jpg" alt="Page 4" />
     </div>
     <div class="page" data-page="5">
-      <img src="images/3d1.png" alt="Page 5" />
+      <img src="images/TRANSFER5.jpg" alt="Page 5" />
     </div>
     <div class="page" data-page="6">
-      <img src="images/model7.jpeg" alt="Page 6" />
+      <img src="images/TRANSFER6.jpg" alt="Page 6" />
     </div>
     <div class="page" data-page="7">
-      <img src="images/buddha2.jpg" alt="Page 7" />
+      <img src="images/TRANSFER7.jpg" alt="Page 7" />
     </div>
     <div class="page" data-page="8">
-      <img src="images/model2.jpeg" alt="Page 8" />
+      <img src="images/TRANSFER8.jpg" alt="Page 8" />
     </div>
     <div class="page" data-page="9">
-      <img src="images/buddha3.jpg" alt="Page 9" />
+      <img src="images/TRANSFER9.jpg" alt="Page 9" />
     </div>
     <div class="page" data-page="10">
-      <img src="images/worm.jpeg" alt="Page 10" />
+      <img src="images/TRANSFER10.jpg" alt="Page 10" />
     </div>
     <div class="page" data-page="11">
-      <img src="images/ipad5.jpeg" alt="Page 11" />
+      <img src="images/TRANSFER11.jpg" alt="Page 11" />
     </div>
     <div class="page" data-page="12">
-      <img src="images/model1.jpeg" alt="Page 12" />
+      <img src="images/TRANSFER12.jpg" alt="Page 12" />
+    </div>
+    <div class="page" data-page="12">
+      <img src="images/TRANSFER13.jpg" alt="Page 13" />
+    </div>
+    <div class="page" data-page="12">
+      <img src="images/TRANSFER14.jpg" alt="Page 14" />
+    </div>
+    <div class="page" data-page="12">
+      <img src="images/TRANSFER15.jpg" alt="Page 15" />
     </div>
   </div>
   <div class="flipbook-controls">
