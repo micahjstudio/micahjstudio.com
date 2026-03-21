@@ -98,8 +98,9 @@ body .flipbook-container {
 
 .page {
   position: absolute;
-  width: 50%;
-  height: 75%;
+  width: 40%;
+  height: 0;
+  padding-bottom: 60%;
   transition: all 0.4s ease;
   cursor: pointer;
   border-radius: 0px;
@@ -107,9 +108,12 @@ body .flipbook-container {
 }
 
 .page img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 0px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
