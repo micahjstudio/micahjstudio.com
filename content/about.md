@@ -5,7 +5,10 @@ draft = false
 tags = ['blog']
 weight = 1
 +++
-------------------------
+
+<br>
+<br>
+<br>
 
 I’m Micah — an artist, photographer, writer, and architecture student based in Corpus Christi.
 
