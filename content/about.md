@@ -6,9 +6,7 @@ tags = ['blog']
 weight = 1
 +++
 
-<br>
-<br>
-<br>
+if you can see this part theres something weong with my code
 
 I’m Micah — an artist, photographer, writer, and architecture student based in Corpus Christi.
 
