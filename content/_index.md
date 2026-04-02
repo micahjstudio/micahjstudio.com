@@ -70,6 +70,24 @@ body .flipbook-container {
     <div class="page" data-page="12">
       <img src="images/TRANSFER15.jpg" alt="Page 15" />
     </div>
+    <div class="page" data-page="12">
+      <img src="images/TRANSFER16.jpg" alt="Page 16" />
+    </div>
+     <div class="page" data-page="12">
+      <img src="images/TRANSFER17.jpg" alt="Page 17" />
+    </div>
+     <div class="page" data-page="12">
+      <img src="images/TRANSFER18.jpg" alt="Page 18" />
+    </div>
+     <div class="page" data-page="12">
+      <img src="images/TRANSFER19.jpg" alt="Page 19" />
+    </div>
+     <div class="page" data-page="12">
+      <img src="images/TRANSFER120.jpg" alt="Page 20" />
+    </div>
+     <div class="page" data-page="12">
+      <img src="images/TRANSFER21.jpg" alt="Page 21" />
+    </div>
   </div>
   <div class="flipbook-controls">
     <button id="prev-page">← Previous</button>
