@@ -83,7 +83,7 @@ body .flipbook-container {
       <img src="images/TRANSFER19.jpg" alt="Page 19" />
     </div>
      <div class="page" data-page="12">
-      <img src="images/TRANSFER120.jpg" alt="Page 20" />
+      <img src="images/TRANSFER20.jpg" alt="Page 20" />
     </div>
      <div class="page" data-page="12">
       <img src="images/TRANSFER21.jpg" alt="Page 21" />
