@@ -16,7 +16,7 @@ Studying Architecture at Del Mar College.
 
 Learning basic web coding and building simple websites (like this one), to sharpen my technical and design skills.
 
-Actively seeking a drafting job — with long-term aim to become a licensed architect.
+Actively seeking a job in the architectural field — with long-term aim to become a licensed architect.
 
 **How I Work / What I Believe In**
 
@@ -32,15 +32,13 @@ I’m always eager to learn, collaborate, and grow. I take on every project — 
 
 **Want to See My Work?**
 
-For photography, check out my portfolio - (https://micah-james.com)
+Instagram: [@mi.cah.j](https://www.instagram.com/mi.cah.j/)
 
-For architecture / draft-style work, I’m open to contract or entry-level drafting jobs.
+For architecture / drafting / 3D modeling / rendering work, I’m open to contract or entry-level jobs.
 
 Reach out any time — I’d love to chat about a project, my work, or potential collaboration.
 
 Email: micah@micahjstudio.com
-
-Instagram: [@mi.cah.j](https://www.instagram.com/mi.cah.j/)
 
 **Why Work With Me / My Vision**
 
