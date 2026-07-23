@@ -54,6 +54,7 @@ body .flipbook-container {
     </div>
     <div class="page" data-page="10">
       <img src="images/TRANSFER8.jpg" alt="Page 10" />
+    </div>
   </div>
   <div class="flipbook-controls">
     <button id="prev-page">← Previous</button>
